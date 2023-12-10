@@ -1,0 +1,53 @@
+/* default setup for the webpage */
+*{
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;
+font-family: tahoma, Times, serif;
+list-style-type: none;
+text-decoration: none;
+
+}
+
+/* to clear default margin and padding */
+body{
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+/*clear float */
+.clear{
+    clear:both;
+}
+
+/*.....................................................*/
+
+/* make this tag block level element */
+header, nav, article, section, footer{
+    display: block;
+}
+
+/*.....................................................*/
+
+
+/*html background-colour*/
+html{
+   
+}
+
+
+/*this code is used to rule the page. */
+hr{
+    margin-top:10px;
+}
+
+/*this code is used for the app copyright */
+.copyright{
+    font-family: tahoma;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+
+}

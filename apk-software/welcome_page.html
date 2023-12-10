@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html oncontextmenu="return false">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>APK</title>
+<link rel="stylesheet" href="./css/main.css"/>
+<link rel="shortcut icon" href="./icons/mikano_logo.png">
+</head>
+
+<style>
+
+
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) { 
+ /* this code is used to work on the welcomepage body; importantly background propertise */
+ .body1{
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0px;
+  background-color: #D2AE6D;
+}
+
+
+.admin{
+  margin-left: 100px;
+  margin-bottom: 30px;
+}
+
+.container{
+  margin-top: 50px;
+}
+
+.welcomepagelogo{
+text-align: center;
+margin-top: 50px;
+}
+
+
+
+
+div.gallery {
+  float: left;
+  width: 20%;
+  color:  rgb(255, 72, 0);
+}
+
+div.gallery img{
+padding: 20px;
+}
+
+
+
+        div.gallery:hover {
+  border: 0px solid #292827;
+  width: 250px;
+  background-color: #e9bf70d2;
+}
+
+
+.firstCaption{
+    font: bolder normal 25px tahoma;
+        padding: 0px;
+        text-align: center;
+       color:  rgb(255, 72, 0);
+}
+
+.hidden{
+  display : none;
+  }
+
+
+#dfm{
+  font: bolder normal 16px tahoma;
+        padding: 0px;
+        text-align: center;
+       color:  rgb(255, 72, 0);
+}
+
+
+#changan{
+  font: bolder normal 16px tahoma;
+        padding: 0px;
+        text-align: center;
+       color:  rgb(255, 72, 0);
+}
+
+
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 10px;
+
+
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: green;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+
+marquee{
+  background-color: blue;
+}
+            
+
+/*this code is used for the app copyright */
+.copyright1{
+    font-family: tahoma;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+
+}
+  }
+
+    </style>
+
+<body class="body1"> 
+<main >
+
+    <header><div class="welcomepagelogo">
+        <img src="./images/welcomepage_logo.png"  alt="advic"style="  max-width: 100%; height: auto;"/>
+    </div>
+    </header>
+        
+    <div class="container">
+
+      <div class="admin">
+ <button class="gbutton" type="button" onclick="showGood01()" id="">Admin01</button>
+<input type="password" name="password11" size="15" id="password11" class="hidden" onkeyup="activateBtn01()" />
+<a href="https://docs.google.com/spreadsheets/d/1l8__iIAf-p474Z1KUxdlGwwjhIPwXxpY/edit?usp=sharing&rtpof=true&sd=true" target="_blank"><button  class="accessbutton"   id='allow01'  disabled name="allow01" value='Allow Access'>Login </button></a> 
+
+<br>
+<br>
+  <button class="gbutton" type="button" onclick="showGood088()" id="">Admin02</button>
+  <input type="password" name="password88" size="15" id="password88" class="hidden" onkeyup="activateBtn088()" />
+  <a href="https://drive.google.com/drive/folders/1o-ogz3Y6shh8V40TvOut5qTwgYxMwhTo" target="_blank"><button  class="accessbutton"   id='allow088'  disabled name="allow088" value='Allow Access'>Login </button></a> 
+
+      </div>
+        <div class="gallery" id="button1" onclick="myGeely()">
+                <img src="./images/car_brand/geely.png"  alt="geely"style="  max-width: 100%; height: auto;"/>
+    <div class="firstCaption">GEELY</div>
+              </div>
+        
+                  <div class="gallery" id="button1" onclick="myDFM()">
+                                 <img src="./images/car_brand/dfm.png" alt="dfm" style="  max-width: 100%; height: auto;"/>
+                                 <div class="firstCaption">DFM</div>
+                                 <br>
+                                 <div id="dfm" class="hidden">
+                                  <a href="./dfm/assembly_dfm.html"><p>ASSEMBLY</p></a>
+                    
+                  </div>
+                  </div>
+                  
+                  
+            
+  
+      <div class="gallery">
+        <a href="#">
+                      <img src="./images/car_brand/maxus.png" alt="maxus" style="  max-width: 100%; height: auto;"/>
+                      <div class="firstCaption">MAXUS</div>
+                    </a>
+      </div>
+      
+        <div  class="gallery" id="button1" onclick="chanGan()">
+                      <img src="./images/car_brand/changan.png" alt="changan" style="  max-width: 100%; height: auto;"/>
+                      <div class="firstCaption">CHANGAN</div>
+                      <br>
+                      <div id="changan" class="hidden">
+                      <a href="./changan/assembly_changan.html"><p>ASSEMBLY</p></a>
+       </div>
+        </div>
+
+        <div class="gallery">
+          <a href="#">
+                      <img src="./images/car_brand/camc.png" alt="camc" style="  max-width: 100%; height: auto;"/>
+                      <div class="firstCaption">CAMC</div></a>
+                    </a>
+        </div>
+
+     
+        <div class="clear"></div>
+       
+        <nav >
+          <aside id="dropdownmenu" class="hidden">
+          <div class="sidenav">
+            <button class="dropdown-btn">Coolray
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="./coolray/assembly_coolray.html">Assembly</a>
+                <a href="#">CBU</a>
+              </div>
+              <!----->
+              <button class="dropdown-btn">Azkarra
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+              <a href="assembly.html">Assembly</a>
+                <a href="#">CBU</a>
+              </div>
+              <!----->
+          <button class="dropdown-btn">Okavango
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="assembly.html">Assembly</a>
+            <a href="#">CBU</a>
+          </div>
+                <!----->
+          <button class="dropdown-btn">EC7
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="assembly.html">Assembly</a>
+            <a href="#">CBU</a>
+        
+          </div>
+        
+           <!----->
+           <button class="dropdown-btn">GS7
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="assembly.html">Assembly</a>
+            <a href="#">CBU</a>
+        
+          </div>
+        </div>
+      </aside>
+
+      
+</nav>
+      
+
+
+</main>
+<div ></div>
+
+<section>
+  <marquee direction="left" behavior="scroll" scrollamount="5" style="font-size: 24px; color: white; font-weight: bold; margin-top: 100px;" >
+    Assembly Process Kaizen (APK)
+        </marquee>
+</section>
+</div>
+
+    <footer >  
+        
+
+        <aside >
+               
+        </aside>
+        <div class="clear"></div>
+        
+         <hr>
+<div class="copyright1">
+   <small>copyright&copy;2023Mikano</small> 
+</div>
+
+</footer>
+
+
+<script>
+  //this  code is for Geely dropdown
+  function myGeely() {
+    var div = document.getElementById("dropdownmenu");
+    div.classList.toggle('hidden'); 
+  }
+  
+
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+
+//this code is for DFM only
+function myDFM() {
+  var div = document.getElementById("dfm");
+  div.classList.toggle('hidden'); 
+}
+
+
+//this code is for CHANGAN only
+function chanGan() {
+  var div = document.getElementById("changan");
+  div.classList.toggle('hidden'); 
+}
+
+
+
+
+
+
+
+        //this is to show the password input for admin01
+function showGood01() {
+        var div1 = document.getElementById("password11");
+
+      div1.classList.toggle('hidden');
+
+      }
+
+
+      function activateBtn01() {
+        pass = document.getElementById('password11').value;
+        console.log(pass);
+        document.getElementById('allow01').disabled = pass !== 'manager'; 
+        document.getElementById('allow01').style.color = "white";
+        document.getElementById('allow01').style.background = "green";
+        }
+
+
+
+        //this is to show the password input for admin02
+        function showGood088() {
+        var div1 = document.getElementById("password88");
+
+      div1.classList.toggle('hidden');
+
+      }
+
+      //this is to activate the admin02
+      function activateBtn088() {
+        pass = document.getElementById('password88').value;
+        console.log(pass);
+        document.getElementById('allow088').disabled = pass !== 'depofku'; 
+        document.getElementById('allow088').style.color = "white";
+        document.getElementById('allow088').style.background = "green";
+        }
+
+
+
+
+</script>
+</body>
+</html>     

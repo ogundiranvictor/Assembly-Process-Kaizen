@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html oncontextmenu="return false">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>APK</title>
+<link rel="stylesheet" href="../css/main.css"/>
+<link rel="shortcut icon" href="../icons/mikano_logo.png">
+</head>
+
+<style>
+
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  } 
+
+
+/*@media queries for the page */
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) and (max-width: 599px) {
+
+      .body2{
+    
+        background-image: url(mikano_logo2.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 0px;
+        background-color: #E6E6FA;
+      
+        }
+        
+    
+        
+    
+     /* Set a style for all buttons */
+     /* Set a style for all buttons */
+     button, ul li{
+      background-color: #d4a753;
+    color: #ffffff;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+   
+      font-family: tahoma;
+      font-weight: bold;
+     
+    }
+    
+ 
+
+    button ul, li:hover {
+      
+      opacity: 0.4;
+    }
+        
+    
+    /* this code is to edit the supervisors login entrance to the page, i divided the code in two class supervisor1 and supervisor2*/
+    .supervisor1 ul li{
+    text-align: center;
+    font-family: tahoma;
+    border: 5px ridge #777776;
+  margin-top: 20px;
+    }
+    
+    /* this code is to edit the supervisors login entrance to the page,  i divided the code in two class supervisor1 and supervisor2*/
+    .supervisor2 ul li{
+        text-align: center;
+    border: 5px ridge #777776;
+    margin-top: 20px;
+    }
+    
+    
+    /*this code is used for the app copyright */
+    .copyright1{
+        font-family: tahoma;
+        font-weight: bold;
+        font-style: normal;
+        text-align: center;
+    
+    }
+    
+        
+        
+        /*-------------------*/
+        
+        
+        
+        
+        
+        /* Full-width input fields */
+        input[type=text], input[type=password] {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          box-sizing: border-box;
+        }
+        
+       
+        
+        /* Extra styles for the cancel button */
+        .cancelbtn {
+          width: auto;
+          padding: 10px 18px;
+          background-color: #f44336;
+        }
+        
+        /* Center the image and position the close button */
+        .imgcontainer {
+          text-align: center;
+          margin: 24px 0 12px 0;
+          position: relative;
+        }
+        
+        img.welcomepage_logo {
+          width: 40%;
+        
+        }
+        
+        .container {
+          padding: 16px;
+        }
+        
+        span.psw {
+          float: right;
+          padding-top: 16px;
+        }
+        
+        /* The Modal (background) */
+        .modal {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgb(0,0,0); /* Fallback color */
+          background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+          padding-top: 60px;
+        }
+        
+        /* Modal Content/Box */
+        .modal-content {
+          background-color: #fefefe;
+          margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+          border: 1px solid #888;
+          width: 80%; /* Could be more or less, depending on screen size */
+        }
+        
+        /* The Close Button (x) */
+        .close {
+          position: absolute;
+          right: 25px;
+          top: 0;
+          color: #000;
+          font-size: 35px;
+          font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+          color: red;
+          cursor: pointer;
+        }
+    
+        
+}
+ 
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) and (max-width: 699px) {
+
+  .body2{
+    
+    background-image: url(mikano_logo2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0px;
+    background-color: #E6E6FA;
+  
+    }
+    
+
+    
+
+ /* Set a style for all buttons */
+ /* Set a style for all buttons */
+ button, ul li{
+  background-color: #d4a753;
+color: #ffffff;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+
+  font-family: tahoma;
+  font-weight: bold;
+ 
+}
+
+button ul, li:hover {
+  
+  opacity: 0.4;
+}
+    
+
+/* this code is to edit the supervisors login entrance to the page, i divided the code in two class supervisor1 and supervisor2*/
+.supervisor1 ul li{
+text-align: center;
+font-family: tahoma;
+border: 5px ridge #777776;
+margin-top: 20px;
+
+}
+
+/* this code is to edit the supervisors login entrance to the page,  i divided the code in two class supervisor1 and supervisor2*/
+.supervisor2 ul li{
+    text-align: center;
+border: 5px ridge #777776;
+margin-top: 20px;
+}
+
+
+/*this code is used for the app copyright */
+.copyright1{
+    font-family: tahoma;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+
+}
+
+    
+    
+    /*-------------------*/
+    
+    
+    
+    
+    
+    /* Full-width input fields */
+    input[type=text], input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    
+   
+    
+    /* Extra styles for the cancel button */
+    .cancelbtn {
+      width: auto;
+      padding: 10px 18px;
+      background-color: #f44336;
+    }
+    
+    /* Center the image and position the close button */
+    .imgcontainer {
+      text-align: center;
+      margin: 24px 0 12px 0;
+      position: relative;
+    }
+    
+    img.welcomepage_logo {
+      width: 40%;
+    
+    }
+    
+    .container {
+      padding: 16px;
+    }
+    
+    span.psw {
+      float: right;
+      padding-top: 16px;
+    }
+    
+    /* The Modal (background) */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      padding-top: 60px;
+    }
+    
+    /* Modal Content/Box */
+    .modal-content {
+      background-color: #fefefe;
+      margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+      border: 1px solid #888;
+      width: 80%; /* Could be more or less, depending on screen size */
+    }
+    
+    /* The Close Button (x) */
+    .close {
+      position: absolute;
+      right: 25px;
+      top: 0;
+      color: #000;
+      font-size: 35px;
+      font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: red;
+      cursor: pointer;
+    }
+
+} 
+
+
+@media only screen and (min-width: 700px) and (max-width: 899px) {
+  .body2{
+    
+    background-image: url(mikano_logo2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0px;
+    background-color: #E6E6FA;
+    }
+    
+
+    
+
+ /* Set a style for all buttons */
+ /* Set a style for all buttons */
+ button, ul li{
+  background-color: #d4a753;
+color: #ffffff;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-family: tahoma;
+  font-weight: bold;
+}
+
+button ul, li:hover {
+  
+  opacity: 0.4;
+}
+    
+
+/* this code is to edit the supervisors login entrance to the page, i divided the code in two class supervisor1 and supervisor2*/
+.supervisor1 ul li{
+float: left;
+width: 30%;
+margin-left: 100px;
+margin-top:150px;
+text-align: center;
+font-family: tahoma;
+padding: 10px 10px 10px 10px;
+border: 5px ridge #777776;
+
+}
+
+/* this code is to edit the supervisors login entrance to the page,  i divided the code in two class supervisor1 and supervisor2*/
+.supervisor2 ul li{
+    float: left;
+    width: 30%;
+    margin-left: 100px;
+    margin-top:100px;
+    text-align: center;
+padding: 10px 10px 10px 10px;
+border: 5px ridge #777776;
+}
+
+
+/*this code is used for the app copyright */
+.copyright1{
+    font-family: tahoma;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+
+}
+
+    
+    
+    /*-------------------*/
+    
+    
+    
+    
+    
+    /* Full-width input fields */
+    input[type=text], input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    
+   
+    
+    /* Extra styles for the cancel button */
+    .cancelbtn {
+      width: auto;
+      padding: 10px 18px;
+      background-color: #f44336;
+    }
+    
+    /* Center the image and position the close button */
+    .imgcontainer {
+      text-align: center;
+      margin: 24px 0 12px 0;
+      position: relative;
+    }
+    
+    img.welcomepage_logo {
+      width: 40%;
+    
+    }
+    
+    .container {
+      padding: 16px;
+    }
+    
+    span.psw {
+      float: right;
+      padding-top: 16px;
+    }
+    
+    /* The Modal (background) */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      padding-top: 60px;
+    }
+    
+    /* Modal Content/Box */
+    .modal-content {
+      background-color: #fefefe;
+      margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+      border: 1px solid #888;
+      width: 80%; /* Could be more or less, depending on screen size */
+    }
+    
+    /* The Close Button (x) */
+    .close {
+      position: absolute;
+      right: 25px;
+      top: 0;
+      color: #000;
+      font-size: 35px;
+      font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: red;
+      cursor: pointer;
+    }
+
+  } 
+
+ 
+ /* Large devices (laptops/desktops, 900px and up) */
+ @media only screen and (min-width: 900px) and (max-width: 1199px) { 
+
+  .body2{
+    
+    background-image: url(mikano_logo2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0px;
+    background-color: #E6E6FA;
+    }
+    
+
+    
+
+ /* Set a style for all buttons */
+ /* Set a style for all buttons */
+ button, ul li{
+  background-color: #d4a753;
+color: #ffffff;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-family: tahoma;
+  font-weight: bold;
+}
+
+button ul, li:hover {
+  
+  opacity: 0.4;
+}
+    
+
+/* this code is to edit the supervisors login entrance to the page, i divided the code in two class supervisor1 and supervisor2*/
+.supervisor1 ul li{
+float: left;
+width: 30%;
+margin-left: 120px;
+margin-top:150px;
+text-align: center;
+font-family: tahoma;
+padding: 10px 10px 10px 10px;
+border: 5px ridge #777776;
+
+}
+
+/* this code is to edit the supervisors login entrance to the page,  i divided the code in two class supervisor1 and supervisor2*/
+.supervisor2 ul li{
+    float: left;
+    width: 30%;
+    margin-left: 120px;
+    margin-top:100px;
+    text-align: center;
+padding: 10px 10px 10px 10px;
+border: 5px ridge #777776;
+}
+
+
+/*this code is used for the app copyright */
+.copyright1{
+    font-family: tahoma;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+
+}
+
+    
+    
+    /*-------------------*/
+    
+    
+    
+    
+    
+    /* Full-width input fields */
+    input[type=text], input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    
+   
+    
+    /* Extra styles for the cancel button */
+    .cancelbtn {
+      width: auto;
+      padding: 10px 18px;
+      background-color: #f44336;
+    }
+    
+    /* Center the image and position the close button */
+    .imgcontainer {
+      text-align: center;
+      margin: 24px 0 12px 0;
+      position: relative;
+    }
+    
+    img.welcomepage_logo {
+      width: 40%;
+    
+    }
+    
+    .container {
+      padding: 16px;
+    }
+    
+    span.psw {
+      float: right;
+      padding-top: 16px;
+    }
+    
+    /* The Modal (background) */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      padding-top: 60px;
+    }
+    
+    /* Modal Content/Box */
+    .modal-content {
+      background-color: #fefefe;
+      margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+      border: 1px solid #888;
+      width: 80%; /* Could be more or less, depending on screen size */
+    }
+    
+    /* The Close Button (x) */
+    .close {
+      position: absolute;
+      right: 25px;
+      top: 0;
+      color: #000;
+      font-size: 35px;
+      font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: red;
+      cursor: pointer;
+    }
+
+ } 
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) { 
+
+  .body2{
+    
+    background-image: url(mikano_logo2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0px;
+    background-color: #E6E6FA;
+    }
+    
+
+    
+
+ /* Set a style for all buttons */
+ /* Set a style for all buttons */
+ button, ul li{
+  background-color: #d4a753;
+color: #ffffff;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-family: tahoma;
+  font-weight: bold;
+}
+
+button ul, li:hover {
+  
+  opacity: 0.4;
+}
+    
+
+/* this code is to edit the supervisors login entrance to the page, i divided the code in two class supervisor1 and supervisor2*/
+.supervisor1 ul li{
+float: left;
+width: 20%;
+margin-left: 270px;
+margin-top:150px;
+text-align: center;
+font-family: tahoma;
+padding: 10px 10px 10px 10px;
+border: 5px ridge #777776;
+
+}
+
+/* this code is to edit the supervisors login entrance to the page,  i divided the code in two class supervisor1 and supervisor2*/
+.supervisor2 ul li{
+    float: left;
+    width: 20%;
+    margin-left: 270px;
+    margin-top:100px;
+    text-align: center;
+padding: 10px 10px 10px 10px;
+border: 5px ridge #777776;
+}
+
+
+/*this code is used for the app copyright */
+.copyright1{
+    font-family: tahoma;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+
+}
+
+    
+    
+    /*-------------------*/
+    
+    
+    
+    
+    
+    /* Full-width input fields */
+    input[type=text], input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    
+   
+    
+    /* Extra styles for the cancel button */
+    .cancelbtn {
+      width: auto;
+      padding: 10px 18px;
+      background-color: #f44336;
+    }
+    
+    /* Center the image and position the close button */
+    .imgcontainer {
+      text-align: center;
+      margin: 24px 0 12px 0;
+      position: relative;
+    }
+    
+    img.welcomepage_logo {
+      width: 40%;
+    
+    }
+    
+    .container {
+      padding: 16px;
+    }
+    
+    span.psw {
+      float: right;
+      padding-top: 16px;
+    }
+    
+    /* The Modal (background) */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      padding-top: 60px;
+    }
+    
+    /* Modal Content/Box */
+    .modal-content {
+      background-color: #fefefe;
+      margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+      border: 1px solid #888;
+      width: 80%; /* Could be more or less, depending on screen size */
+    }
+    
+    /* The Close Button (x) */
+    .close {
+      position: absolute;
+      right: 25px;
+      top: 0;
+      color: #000;
+      font-size: 35px;
+      font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: red;
+      cursor: pointer;
+    }
+
+
+ }
+
+    
+            /* Add Zoom Animation */
+            .animate {
+              -webkit-animation: animatezoom 0.6s;
+              animation: animatezoom 0.6s
+            }
+            
+            @-webkit-keyframes animatezoom {
+              from {-webkit-transform: scale(0)} 
+              to {-webkit-transform: scale(1)}
+            }
+              
+            @keyframes animatezoom {
+              from {transform: scale(0)} 
+              to {transform: scale(1)}
+            }
+    </style>
+<body class="body2">
+
+
+    <nav>
+    <div class="supervisor1">
+    <ul>
+        <li><button onclick="document.getElementById('id01').style.display='block'" style="width:auto; font-size:x-large;">LOGISTICS</button></li>
+        <li><button onclick="document.getElementById('id02').style.display='block'" style="width:auto; font-size:x-large;">PRODUCTION</button></li>
+    </ul>
+    </div>
+
+    <div class="clear"></div>
+
+    <div class="supervisor2">
+        <ul>
+        <li><button onclick="document.getElementById('id03').style.display='block'" style="width:auto; font-size:x-large;">QUALITY CONTROL</button></li>
+        <li><button onclick="document.getElementById('id04').style.display='block'" style="width:auto; font-size:x-large;">QUALITY ASSURANCE</button></li>
+    </ul>
+    </div>
+    </nav>
+
+<!--- login modal for logistics --->
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="../dfm/firstpagelogistic_dfm.html" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="../images/welcomepage_logo.png" alt="welcomepage_logo" class="welcomepage_logo">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" id="username1" name="uname" onkeyup="activateBtn01()">
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" id="password1" name="psw" onkeyup="activateBtn02()" disabled>
+        
+      <button type="submit" id="login1" disabled >Login</button>
+
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      
+    </div>
+  </form>
+</div>
+
+<!-- login modal for production--->
+<div id="id02" class="modal">
+  
+  <form class="modal-content animate" action="batch_dfm.html" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="../images/welcomepage_logo.png" alt="welcomepage_logo" class="welcomepage_logo">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" id="username11" name="uname" onkeyup="activateBtn011()">
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" id="password11" name="psw" onkeyup="activateBtn022()" disabled>
+        
+      <button type="submit" id="login11" disabled>Login</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+
+<!---- login modal for  quality control -->
+<div id="id03" class="modal">
+  
+  <form class="modal-content animate" action="qualitycontrol_dfm.html" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="../images/welcomepage_logo.png" alt="welcomepage_logo" class="welcomepage_logo">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" id="username111" name="uname" onkeyup="activateBtn0111()">
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" id="password111" name="psw" onkeyup="activateBtn0222()" disabled>
+        
+      <button type="submit" id="login111" disabled>Login</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+
+<!---  login modal for quality control quality Asurrance -->
+<div id="id04" class="modal">
+  
+  <form class="modal-content animate" action="quality_assurance_dfm.html" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id04').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="../images/welcomepage_logo.png" alt="welcomepage_logo" class="welcomepage_logo">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" id="username1111" name="uname"  onkeyup="activateBtn01111()">
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" id="password1111" name="psw" onkeyup="activateBtn02222()"disabled>
+        
+      <button type="submit" id="login1111" disabled>Login</button>
+
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id04').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+
+
+<footer >  
+        
+
+    <aside >
+           
+    </aside>
+    <div class="clear"></div>
+    
+     <hr>
+<div class="copyright1">
+<small>copyright&copy;2022Mikano. All rights reserved.</small> 
+</div>
+
+</footer>
+
+<script>
+
+  //LOGISTICS
+         //this is to activate the username 
+         function activateBtn01() {
+        pass = document.getElementById('username1').value;
+        console.log(pass);
+        document.getElementById('password1').disabled = pass !== 'mdlog'; 
+        }   
+        
+
+//this is to activate the Password 
+function activateBtn02() {
+pass = document.getElementById('password1').value;
+console.log(pass);
+document.getElementById('login1').disabled = pass !== 'Ahs40'; 
+}
+
+
+
+  //PRODUCTON
+         //this is to activate the username 
+         function activateBtn011() {
+        pass = document.getElementById('username11').value;
+        console.log(pass);
+        document.getElementById('password11').disabled = pass !== 'mdpro'; 
+        }   
+        
+
+//this is to activate the Password 
+function activateBtn022() {
+pass = document.getElementById('password11').value;
+console.log(pass);
+document.getElementById('login11').disabled = pass !== 'Pro19'; 
+}
+
+
+//QUALITY CONTROL
+         //this is to activate the username 
+         function activateBtn0111() {
+        pass = document.getElementById('username111').value;
+        console.log(pass);
+        document.getElementById('password111').disabled = pass !== 'mdqc'; 
+        }   
+        
+
+//this is to activate the Password 
+function activateBtn0222() {
+pass = document.getElementById('password111').value;
+console.log(pass);
+document.getElementById('login111').disabled = pass !== 'Qc34'; 
+}
+
+
+//QUALITY ASSURANCE
+         //this is to activate the username 
+         function activateBtn01111() {
+        pass = document.getElementById('username1111').value;
+        console.log(pass);
+        document.getElementById('password1111').disabled = pass !== 'mdqa'; 
+        }   
+        
+
+//this is to activate the Password 
+function activateBtn02222() {
+pass = document.getElementById('password1111').value;
+console.log(pass);
+document.getElementById('login1111').disabled = pass !== 'Qa90'; 
+}
+           
+</script>
+
+</body>
+</html>

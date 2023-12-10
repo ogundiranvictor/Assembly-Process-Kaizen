@@ -1,0 +1,2949 @@
+<!DOCTYPE html>
+<html oncontextmenu="return false">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>APK</title>
+<link rel="stylesheet" href="../css/main.css"/>
+<link rel="shortcut icon" href="../icons/mikano_logo.png">
+</head>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <script>
+    function SubForm (){
+  //Json libray code link for data storage
+        $.ajax({
+            url:"https://api.apispreadsheets.com/data/kjSN3gXvUZM7WtAb/",
+            type:"post",
+            data:$("#myForm").serializeArray(),
+            success: function(){
+                alert("successful!")
+            },
+            error: function(){
+                alert("No Network Connection:(error")
+            }
+        });
+  
+        ///this line of code is to display save to file 
+        var div = document.getElementById("showjobcd");
+      div.classList.toggle('hidden');
+    }
+    </script>
+
+
+
+
+
+<style>
+ 
+  /*@media queries for the page */
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) and (max-width: 599px) {
+       /* this code is used to work on the welcomepage body; importantly background propertise */
+       .body6{
+                 background-image: url(welcomepage.png);
+                 background-position: center;
+                 background-repeat: no-repeat;
+                 padding: 0px;
+                 background-color: #E6E6FA;
+             }
+ 
+         
+     
+         .welcomepagelogostockin{
+             text-align: center;
+             margin-top: 50px;
+         }
+         
+     /*clear float */
+     .clear{
+         clear:both;
+     }
+ 
+     
+     a{
+   text-decoration: none;
+ 
+ }
+ li{
+ 
+     list-style-type:none;
+   }
+     .batchform{
+       float: left;
+ 
+       border: 2px ridge;
+       background-color: #d4a753;
+         margin-top: 50px;
+         font-weight: 900;
+         padding-left: 20px;
+         padding-top: 20px;
+         padding-bottom: 20px;
+         height: 400px;
+     }
+ 
+     
+     .batchforminput{
+       text-align: center;
+     }
+     
+ 
+     input{
+         text-align: center;
+     }
+ 
+     
+     section{
+       float: left;
+         width:100%;
+         margin-top: 0px;
+         margin-left: 0px;
+     
+     }
+ 
+    section, ul{
+         float: left;
+     }
+     .hidden{
+         display : none;
+         
+         }
+ 
+         
+ 
+         input[type=radio] {
+           border: 0px;
+           width: 30px;
+           height: 3em;
+           margin: 0px;
+           padding: 0px;
+         vertical-align:middle;
+         }
+ 
+ 
+         .toperation1{
+           float: left;
+           padding: 10px;
+           border:1px ridge;
+           margin-top: 20px;
+           margin-bottom: 20px;
+         margin-right: 10px;
+           background-color: #d4a753;
+           font-size: 14px;
+        }
+ 
+         .toperation2{
+           float: left;
+           padding: 10px;
+           border:1px ridge;
+           margin-top: 20px;
+           margin-bottom: 20px;
+           margin-right: 10px;
+           background-color: #d4a753;
+           font-size: 14px;
+         }
+ 
+         .toperation3{
+           float: left;
+           padding: 10px;
+           border:1px ridge;
+           margin-top: 20px;
+           margin-bottom: 20px;
+           margin-right: 10px;
+           background-color: #d4a753;
+           font-size: 14px;
+         }
+ 
+ 
+         .hidden{
+           display : none;
+           
+           }
+           
+ 
+         #trim3{
+           margin-left: 0px;
+         }
+ 
+         #chasis5{
+           margin-left: 0px;
+         }
+ 
+ 
+         
+         section .tqoperation, button{
+             margin-top: 20px;
+ 
+        }
+ 
+ 
+        
+ 
+ textarea{
+     height: 23px;
+ }
+ 
+ .textarea{
+   font-weight: bold;
+     font-size: 16px;
+     margin-bottom: 0px;
+ margin-left: 10px;
+ padding-top: 20px;
+ }
+ 
+ 
+ li{
+     padding-top: 10px;
+ }
+ 
+ 
+ 
+ 
+ 
+ .delayClaim{
+   height:100px;
+   width:200px; 
+   resize:none; 
+   margin-left:20px; 
+    text-align:center;
+ }
+ 
+ #bodyrpt1, #bodyrpt2, #bodyrpt3{
+   height:100px;
+   width:200px; 
+   resize:none; 
+   margin-left:20px; 
+    text-align:center;  
+ }
+ 
+ #txtClaim{
+   height:100px;
+   width:200px; 
+   resize:none; 
+   margin-left:20px; 
+    text-align:center;
+ }
+ 
+ .claimupload{
+ 
+   margin-top: 150px;
+   border-style: outset;
+   border-width: 5px;
+ margin-right: 0px;
+ margin-left: 0px;
+ padding-top: 50px;
+ padding-bottom: 100px;
+ padding-left: 30px;
+ background-color: #E6E6FA;
+ font-size: 12px;
+ }
+  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ .container {
+   padding: 16px;
+ }
+ 
+ 
+ button[type="button"]{
+   font-size: x-large;
+ }
+ 
+   .button1{
+     float: left;
+     margin-left: 120px;
+     margin-top:50px;
+     font-size: 14px; 
+     padding:8px; 
+     font-weight:bold;
+   }
+ 
+   .button1:hover {
+     background-color: yellowgreen;
+     color: white;
+   }
+   
+ 
+  
+ 
+ 
+ 
+ #button2:hover{
+   background-color: yellowgreen;
+     color: white;
+ 
+ }
+ 
+   .container{
+     background-color: #f0d99c;
+ 
+   }
+ 
+ 
+   .trimline {
+     border: none;
+     font-weight: bold;
+     font-size: 16px;
+     background-color: aqua;
+     padding: 5px;
+     margin-left: 20px;
+     margin-bottom: 20px;
+     
+   }
+   
+ 
+   #password22, #password23, #password24,
+   #password25, #password26, #password27,
+   #password28, #password29, #password30, 
+   #password31, #password32, #password33,
+   #password34, #password35, #password36{
+   border: none;
+   font-weight: bold;
+   font-size: 23px;
+   background-color: rgba(255, 251, 0, 0.692);
+   padding: 5px;
+   margin-bottom: 20px;
+ 
+   }
+ 
+ 
+ 
+ 
+ 
+   .accessbutton{
+     font-weight: bold; 
+     font-size:14px;
+     padding:2px;
+ 
+ }
+ 
+ .psvqsv{
+     font-weight: bold;
+     font-size: x-large;
+     padding: 7px;
+     margin-bottom: 20px;
+ 
+ }
+ 
+ .gbutton{
+   font-weight: bold; 
+   font-size:14px; 
+   color:green; 
+   padding:2px;
+ }
+ 
+ .nbutton{
+   font-weight: bold; 
+   font-size:14px; 
+   color:red; 
+   padding:2px;
+ }
+ 
+ 
+ 
+ 
+ /*download data to file styling*/
+ .bt{
+   margin-top: 20px;
+   margin-left: 0PX;
+ }
+ 
+   
+ 
+ #timer{
+   margin-left: 10px;
+ font-weight: bold;
+ }
+ 
+ 
+ 
+ .authorizeBy2{
+   float: left;
+ }
+ 
+ 
+ }
+ 
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) and (max-width: 699px) {
+       /* this code is used to work on the welcomepage body; importantly background propertise */
+       .body6{
+                 background-image: url(welcomepage.png);
+                 background-position: center;
+                 background-repeat: no-repeat;
+                 padding: 0px;
+                 background-color: #E6E6FA;
+             }
+ 
+             a{
+   text-decoration: none;
+ 
+ }
+ li{
+ 
+     list-style-type:none;
+   }
+     
+         .welcomepagelogostockin{
+             text-align: center;
+             margin-top: 50px;
+         }
+         
+     /*clear float */
+     .clear{
+         clear:both;
+     }
+ 
+     
+     
+     .batchform{
+       float: left;
+       border: 2px ridge;
+       background-color: #d4a753;
+       margin-left: 50px;
+       margin-right: 50px;
+         margin-top: 50px;
+         font-weight: 900;
+         padding-left: 50px;
+         padding-top: 15px;
+         padding-bottom: 20px;
+         height: 450px;
+     }
+ 
+     
+     .batchforminput{
+       padding: 50px;
+ 
+     }
+     
+ 
+     input{
+         text-align: center;
+     }
+ 
+     
+     section{
+       float: left;
+         width:100%;
+         margin-top: 0px;
+         margin-left: 0px;
+     
+     }
+ 
+    section, ul{
+         float: left;
+     }
+     .hidden{
+         display : none;
+         
+         }
+ 
+         
+ 
+         input[type=radio] {
+           border: 0px;
+           width: 30px;
+           height: 3em;
+           margin: 0px;
+           padding: 0px;
+         vertical-align:middle;
+         }
+ 
+ 
+         .toperation1{
+           float: left;
+           padding: 10px;
+           border:1px ridge;
+           margin-top: 20px;
+           margin-bottom: 20px;
+         margin-right: 10px;
+           background-color: #d4a753;
+           font-size: 14px;
+        }
+ 
+         .toperation2{
+           float: left;
+           padding: 10px;
+           border:1px ridge;
+           margin-top: 20px;
+           margin-bottom: 20px;
+           margin-right: 10px;
+           background-color: #d4a753;
+           font-size: 14px;
+         }
+ 
+         .toperation3{
+           float: left;
+           padding: 10px;
+           border:1px ridge;
+           margin-top: 20px;
+           margin-bottom: 20px;
+           margin-right: 10px;
+           background-color: #d4a753;
+           font-size: 14px;
+         }
+ 
+ 
+         .hidden{
+           display : none;
+           
+           }
+           
+ 
+         #trim3{
+           margin-left: 0px;
+         }
+ 
+         #chasis5{
+           margin-left: 0px;
+         }
+ 
+ 
+         
+         section .tqoperation, button{
+             margin-top: 20px;
+ 
+        }
+ 
+ 
+        
+ 
+ textarea{
+     height: 23px;
+ }
+ 
+ .textarea{
+   font-weight: bold;
+     font-size: 16px;
+     margin-bottom: 0px;
+ margin-left: 10px;
+ padding-top: 20px;
+ }
+ 
+ 
+ li{
+     padding-top: 10px;
+ }
+ 
+ 
+ 
+ 
+ 
+ .delayClaim{
+   height:100px;
+   width:200px; 
+   resize:none; 
+   margin-left:20px; 
+    text-align:center;
+ }
+ 
+ #bodyrpt1, #bodyrpt2, #bodyrpt3{
+   height:100px;
+   width:200px; 
+   resize:none; 
+   margin-left:20px; 
+    text-align:center;  
+ }
+ 
+ #txtClaim{
+   height:100px;
+   width:200px; 
+   resize:none; 
+   margin-left:20px; 
+    text-align:center;
+ }
+ 
+ .claimupload{
+ 
+   margin-top: 150px;
+   border-style: outset;
+   border-width: 5px;
+ margin-right: 0px;
+ margin-left: 0px;
+ padding-top: 50px;
+ padding-bottom: 100px;
+ padding-left: 30px;
+ background-color: #E6E6FA;
+ font-size: 12px;
+ }
+  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ .container {
+   padding: 16px;
+ }
+ 
+ 
+ 
+ 
+   .button1{
+     float: left;
+     margin-left: 120px;
+     margin-top:50px;
+     font-size: 14px; 
+     padding:8px; 
+     font-weight:bold;
+   }
+ 
+   .button1:hover {
+     background-color: yellowgreen;
+     color: white;
+   }
+   
+ 
+  
+ 
+ 
+ 
+ #button2:hover{
+   background-color: yellowgreen;
+     color: white;
+ 
+ }
+ 
+   .container{
+     background-color: #f0d99c;
+ 
+   }
+ 
+ 
+   .trimline {
+     border: none;
+     font-weight: bold;
+     font-size: 16px;
+     background-color: aqua;
+     padding: 5px;
+     margin-left: 20px;
+     margin-bottom: 20px;
+     
+   }
+   
+ 
+   #password22, #password23, #password24,
+   #password25, #password26, #password27,
+   #password28, #password29, #password30, 
+   #password31, #password32, #password33,
+   #password34, #password35, #password36{
+   border: none;
+   font-weight: bold;
+   font-size: 23px;
+   background-color: rgba(255, 251, 0, 0.692);
+   padding: 5px;
+   margin-bottom: 20px;
+ 
+   }
+ 
+ 
+ 
+ 
+ 
+   .accessbutton{
+     font-weight: bold; 
+     font-size:14px;
+     padding:2px;
+ 
+ }
+ 
+ .psvqsv{
+     font-weight: bold;
+     font-size: x-large;
+     padding: 7px;
+     margin-bottom: 20px;
+ 
+ }
+ 
+ .gbutton{
+   font-weight: bold; 
+   font-size:14px; 
+   color:green; 
+   padding:2px;
+ }
+ 
+ .nbutton{
+   font-weight: bold; 
+   font-size:14px; 
+   color:red; 
+   padding:2px;
+ }
+ 
+ 
+ 
+ 
+ /*download data to file styling*/
+ .bt{
+   margin-top: 20px;
+   margin-left: 0PX;
+ }
+ 
+   
+ 
+ #timer{
+   margin-left: 10px;
+ font-weight: bold;
+ }
+ 
+ 
+ 
+ .authorizeBy2{
+   float: left;
+ }
+ 
+ }
+ 
+ 
+ /* Medium devices (landscape tablets, 700px and up) */
+ @media only screen and (min-width: 700px) and (max-width: 899px) {
+       /* this code is used to work on the welcomepage body; importantly background propertise */
+       .body6{
+                 background-image: url(welcomepage.png);
+                 background-position: center;
+                 background-repeat: no-repeat;
+                 padding: 0px;
+                 background-color: #E6E6FA;
+             }
+ 
+             a{
+   text-decoration: none;
+ 
+ }
+ li{
+ 
+     list-style-type:none;
+   }
+     
+         .welcomepagelogostockin{
+             text-align: center;
+             margin-top: 50px;
+         }
+         
+     /*clear float */
+     .clear{
+         clear:both;
+     }
+ 
+     
+     
+     .batchform{
+       float: left;
+       border: 2px ridge;
+       background-color: #d4a753;
+       margin-left: 50px;
+       margin-right: 50px;
+         margin-top: 50px;
+         font-weight: 900;
+         padding-left: 50px;
+         padding-top: 15px;
+         padding-bottom: 20px;
+         height: 450px;
+     }
+ 
+     
+     .batchforminput{
+       padding: 50px;
+ 
+     }
+     
+ 
+     input{
+         text-align: center;
+     }
+ 
+     
+     section{
+       float: left;
+         width:100%;
+         margin-top: 0px;
+         margin-left: 0px;
+     
+     }
+ 
+    section, ul{
+         float: left;
+     }
+     .hidden{
+         display : none;
+         
+         }
+ 
+         
+ 
+         input[type=radio] {
+           border: 0px;
+           width: 30px;
+           height: 3em;
+           margin: 0px;
+           padding: 0px;
+         vertical-align:middle;
+         }
+ 
+ 
+         .toperation1{
+           float: left;
+           padding: 10px;
+           border:1px ridge;
+           margin-top: 20px;
+           margin-bottom: 20px;
+         margin-right: 10px;
+           background-color: #d4a753;
+           font-size: 14px;
+        }
+ 
+         .toperation2{
+           float: left;
+           padding: 10px;
+           border:1px ridge;
+           margin-top: 20px;
+           margin-bottom: 20px;
+           margin-right: 10px;
+           background-color: #d4a753;
+           font-size: 14px;
+         }
+ 
+         .toperation3{
+           float: left;
+           padding: 10px;
+           border:1px ridge;
+           margin-top: 20px;
+           margin-bottom: 20px;
+           margin-right: 10px;
+           background-color: #d4a753;
+           font-size: 14px;
+         }
+ 
+ 
+         .hidden{
+           display : none;
+           
+           }
+           
+ 
+         #trim3{
+           margin-left: 0px;
+         }
+ 
+         #chasis5{
+           margin-left: 0px;
+         }
+ 
+ 
+         
+         section .tqoperation, button{
+             margin-top: 20px;
+ 
+        }
+ 
+ 
+        
+ 
+ textarea{
+     height: 23px;
+ }
+ 
+ .textarea{
+   font-weight: bold;
+     font-size: 16px;
+     margin-bottom: 0px;
+ margin-left: 10px;
+ padding-top: 20px;
+ }
+ 
+ 
+ li{
+     padding-top: 10px;
+ }
+ 
+ 
+ 
+ 
+ 
+ .delayClaim{
+   height:100px;
+   width:200px; 
+   resize:none; 
+   margin-left:20px; 
+    text-align:center;
+ }
+ 
+ #bodyrpt1, #bodyrpt2, #bodyrpt3{
+   height:100px;
+   width:200px; 
+   resize:none; 
+   margin-left:20px; 
+    text-align:center;  
+ }
+ 
+ #txtClaim{
+   height:100px;
+   width:200px; 
+   resize:none; 
+   margin-left:20px; 
+    text-align:center;
+ }
+ 
+ .claimupload{
+ 
+   margin-top: 150px;
+   border-style: outset;
+   border-width: 5px;
+ margin-right: 0px;
+ margin-left: 0px;
+ padding-top: 50px;
+ padding-bottom: 100px;
+ padding-left: 30px;
+ background-color: #E6E6FA;
+ font-size: 12px;
+ }
+  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ .container {
+   padding: 16px;
+ }
+ 
+ 
+ 
+ 
+   .button1{
+     float: left;
+     margin-left: 120px;
+     margin-top:50px;
+     font-size: 14px; 
+     padding:8px; 
+     font-weight:bold;
+   }
+ 
+   .button1:hover {
+     background-color: yellowgreen;
+     color: white;
+   }
+   
+ 
+  
+ 
+ 
+ 
+ #button2:hover{
+   background-color: yellowgreen;
+     color: white;
+ 
+ }
+ 
+   .container{
+     background-color: #f0d99c;
+ 
+   }
+ 
+ 
+   .trimline {
+     border: none;
+     font-weight: bold;
+     font-size: 16px;
+     background-color: aqua;
+     padding: 5px;
+     margin-left: 20px;
+     margin-bottom: 20px;
+     
+   }
+   
+ 
+   #password22, #password23, #password24,
+   #password25, #password26, #password27,
+   #password28, #password29, #password30, 
+   #password31, #password32, #password33,
+   #password34, #password35, #password36{
+   border: none;
+   font-weight: bold;
+   font-size: 23px;
+   background-color: rgba(255, 251, 0, 0.692);
+   padding: 5px;
+   margin-bottom: 20px;
+ 
+   }
+ 
+ 
+ 
+ 
+ 
+   .accessbutton{
+     font-weight: bold; 
+     font-size:14px;
+     padding:2px;
+ 
+ }
+ 
+ .psvqsv{
+     font-weight: bold;
+     font-size: x-large;
+     padding: 7px;
+     margin-bottom: 20px;
+ 
+ }
+ 
+ .gbutton{
+   font-weight: bold; 
+   font-size:14px; 
+   color:green; 
+   padding:2px;
+ }
+ 
+ .nbutton{
+   font-weight: bold; 
+   font-size:14px; 
+   color:red; 
+   padding:2px;
+ }
+ 
+ 
+ 
+ 
+ /*download data to file styling*/
+ .bt{
+   margin-top: 20px;
+   margin-left: 0PX;
+ }
+ 
+   
+ 
+ #timer{
+   margin-left: 10px;
+ font-weight: bold;
+ }
+ 
+ 
+ 
+ .authorizeBy2{
+   float: left;
+ }
+ 
+ } 
+ 
+  /* Large devices (laptops/desktops, 900px and up) */
+ @media only screen and (min-width: 900px) and (max-width: 1199px) {
+        /* this code is used to work on the welcomepage body; importantly background propertise */
+        .body6{
+                 background-image: url(welcomepage.png);
+                 background-position: center;
+                 background-repeat: no-repeat;
+                 padding: 0px;
+                 background-color: #E6E6FA;
+             }
+ 
+             a{
+   text-decoration: none;
+ 
+ }
+ li{
+ 
+     list-style-type:none;
+   }
+     
+         .welcomepagelogostockin{
+             text-align: center;
+             margin-top: 50px;
+         }
+         
+     /*clear float */
+     .clear{
+         clear:both;
+     }
+ 
+     
+     
+     .batchform{
+       float: left;
+       border: 2px ridge;
+       background-color: #d4a753;
+       margin-left: 50px;
+       margin-right: 50px;
+         margin-top: 50px;
+         font-weight: 900;
+         padding-left: 50px;
+         padding-top: 15px;
+         padding-bottom: 20px;
+         height: 450px;
+     }
+ 
+     
+     .batchforminput{
+       padding: 50px;
+ 
+     }
+     
+ 
+     input{
+         text-align: center;
+     }
+ 
+     
+     section{
+       float: left;
+         width:100%;
+         margin-top: 0px;
+         margin-left: 0px;
+     
+     }
+ 
+    section, ul{
+         float: left;
+     }
+     .hidden{
+         display : none;
+         
+         }
+ 
+         
+ 
+         input[type=radio] {
+           border: 0px;
+           width: 30px;
+           height: 3em;
+           margin: 0px;
+           padding: 0px;
+         vertical-align:middle;
+         }
+ 
+ 
+         .toperation1{
+           float: left;
+           padding: 10px;
+           border:1px ridge;
+           margin-top: 20px;
+           margin-bottom: 20px;
+         margin-right: 10px;
+           background-color: #d4a753;
+           font-size: 14px;
+        }
+ 
+         .toperation2{
+           float: left;
+           padding: 10px;
+           border:1px ridge;
+           margin-top: 20px;
+           margin-bottom: 20px;
+           margin-right: 10px;
+           background-color: #d4a753;
+           font-size: 14px;
+         }
+ 
+         .toperation3{
+           float: left;
+           padding: 10px;
+           border:1px ridge;
+           margin-top: 20px;
+           margin-bottom: 20px;
+           margin-right: 10px;
+           background-color: #d4a753;
+           font-size: 14px;
+         }
+ 
+ 
+         .hidden{
+           display : none;
+           
+           }
+           
+ 
+         #trim3{
+           margin-left: 0px;
+         }
+ 
+         #chasis5{
+           margin-left: 0px;
+         }
+ 
+ 
+         
+         section .tqoperation, button{
+             margin-top: 20px;
+ 
+        }
+ 
+ 
+        
+ 
+ textarea{
+     height: 23px;
+ }
+ 
+ .textarea{
+   font-weight: bold;
+     font-size: 16px;
+     margin-bottom: 0px;
+ margin-left: 10px;
+ padding-top: 20px;
+ }
+ 
+ 
+ li{
+     padding-top: 10px;
+ }
+ 
+ 
+ 
+ 
+ 
+ .delayClaim{
+   height:100px;
+   width:200px; 
+   resize:none; 
+   margin-left:20px; 
+    text-align:center;
+ }
+ 
+ #bodyrpt1, #bodyrpt2, #bodyrpt3{
+   height:100px;
+   width:200px; 
+   resize:none; 
+   margin-left:20px; 
+    text-align:center;  
+ }
+ 
+ #txtClaim{
+   height:100px;
+   width:200px; 
+   resize:none; 
+   margin-left:20px; 
+    text-align:center;
+ }
+ 
+ .claimupload{
+ 
+   margin-top: 150px;
+   border-style: outset;
+   border-width: 5px;
+ margin-right: 0px;
+ margin-left: 0px;
+ padding-top: 50px;
+ padding-bottom: 100px;
+ padding-left: 30px;
+ background-color: #E6E6FA;
+ font-size: 12px;
+ }
+  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ .container {
+   padding: 16px;
+ }
+ 
+ 
+ 
+ 
+   .button1{
+     float: left;
+     margin-left: 120px;
+     margin-top:50px;
+     font-size: 14px; 
+     padding:8px; 
+     font-weight:bold;
+   }
+ 
+   .button1:hover {
+     background-color: yellowgreen;
+     color: white;
+   }
+   
+ 
+  
+ 
+ 
+ 
+ #button2:hover{
+   background-color: yellowgreen;
+     color: white;
+ 
+ }
+ 
+   .container{
+     background-color: #f0d99c;
+ 
+   }
+ 
+ 
+   .trimline {
+     border: none;
+     font-weight: bold;
+     font-size: 16px;
+     background-color: aqua;
+     padding: 5px;
+     margin-left: 20px;
+     margin-bottom: 20px;
+     
+   }
+   
+ 
+   #password22, #password23, #password24,
+   #password25, #password26, #password27,
+   #password28, #password29, #password30, 
+   #password31, #password32, #password33,
+   #password34, #password35, #password36{
+   border: none;
+   font-weight: bold;
+   font-size: 23px;
+   background-color: rgba(255, 251, 0, 0.692);
+   padding: 5px;
+   margin-bottom: 20px;
+ 
+   }
+ 
+ 
+ 
+ 
+ 
+   .accessbutton{
+     font-weight: bold; 
+     font-size:14px;
+     padding:2px;
+ 
+ }
+ 
+ .psvqsv{
+     font-weight: bold;
+     font-size: x-large;
+     padding: 7px;
+     margin-bottom: 20px;
+ 
+ }
+ 
+ .gbutton{
+   font-weight: bold; 
+   font-size:14px; 
+   color:green; 
+   padding:2px;
+ }
+ 
+ .nbutton{
+   font-weight: bold; 
+   font-size:14px; 
+   color:red; 
+   padding:2px;
+ }
+ 
+ 
+ 
+ 
+ /*download data to file styling*/
+ .bt{
+   margin-top: 20px;
+   margin-left: 0PX;
+ }
+ 
+   
+ 
+ #timer{
+   margin-left: 10px;
+ font-weight: bold;
+ }
+ 
+ 
+ 
+ .authorizeBy2{
+   float: left;
+ }
+ 
+ } 
+ 
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) { 
+       /* this code is used to work on the welcomepage body; importantly background propertise */
+         .body6{
+                 background-image: url(welcomepage.png);
+                 background-position: center;
+                 background-repeat: no-repeat;
+                 padding: 0px;
+                 background-color: #E6E6FA;
+             }
+ 
+         
+     
+         .welcomepagelogostockin{
+             text-align: center;
+             margin-top: 50px;
+         }
+         
+     /*clear float */
+     .clear{
+         clear:both;
+     }
+ 
+     
+     
+     .batchform{
+       float: left;
+         width: 60%;
+       border: 2px ridge;
+       background-color: #d4a753;
+         margin-top: 50px;
+         margin-left: 250px;
+         font-weight: 900;
+         padding-left: 20px;
+         padding-top: 20px;
+         padding-bottom: 20px;
+         height: 300px;
+     }
+ 
+     
+     .batchforminput{
+       margin-left: 100px;
+     }
+     
+ 
+     input{
+         text-align: center;
+     }
+ 
+     
+     section{
+       float: left;
+         width:100%;
+         margin-top: 0px;
+         margin-left: 50px;
+     
+     }
+ 
+    section, ul{
+         float: left;
+     }
+     .hidden{
+         display : none;
+         
+         }
+ 
+         
+ 
+         input[type=radio] {
+           border: 0px;
+           width: 30px;
+           height: 3em;
+           margin: 0px;
+           padding: 0px;
+         vertical-align:middle;
+         }
+ 
+ 
+         .toperation1{
+           float: left;
+           padding: 10px;
+           border:1px ridge;
+           margin-top: 20px;
+           margin-bottom: 20px;
+         margin-right: 20px;
+           background-color: #d4a753;
+     
+        }
+ 
+         .toperation2{
+           float: left;
+           padding: 10px;
+           border:1px ridge;
+           margin-top: 20px;
+           margin-bottom: 20px;
+           margin-right: 20px;
+           background-color: #d4a753;
+         }
+ 
+         .toperation3{
+           float: left;
+           padding: 10px;
+           border:1px ridge;
+           margin-top: 20px;
+           margin-bottom: 20px;
+           margin-right: 20px;
+           background-color: #d4a753;
+         }
+ 
+ 
+         .hidden{
+           display : none;
+           
+           }
+           
+ 
+         #trim3{
+           margin-left: 410px;
+         }
+ 
+         #chasis5{
+           margin-left: 410px;
+         }
+ 
+ 
+         
+         section .tqoperation, button{
+             margin-top: 20px;
+ 
+        }
+ 
+ 
+        
+ 
+ textarea{
+     height: 23px;
+ }
+ 
+ .textarea{
+   font-weight: bold;
+     font-size: 16px;
+     margin-bottom: 0px;
+ margin-left: 20px;
+ padding-top: 20px;
+ }
+ 
+ 
+ li{
+     padding-top: 10px;
+ }
+ 
+ 
+ 
+ 
+ 
+ .delayClaim{
+   height:100px;
+   width:200px; 
+   resize:none; 
+   margin-left:20px; 
+    text-align:center;
+ }
+ 
+ #bodyrpt1, #bodyrpt2, #bodyrpt3{
+   height:100px;
+   width:200px; 
+   resize:none; 
+   margin-left:20px; 
+    text-align:center;  
+ }
+ 
+ #txtClaim{
+   height:100px;
+   width:200px; 
+   resize:none; 
+   margin-left:20px; 
+    text-align:center;
+ }
+ 
+ .claimupload{
+ 
+   margin-top: 150px;
+   border-style: outset;
+   border-width: 5px;
+ margin-right: 300px;
+ margin-left: 300px;
+ padding-top: 50px;
+ padding-bottom: 100px;
+ padding-left: 70px;
+ background-color: #E6E6FA;
+ }
+  
+  
+ 
+ 
+ 
+ 
+ 
+   .button1{
+     float: left;
+     margin-left:500px;
+     margin-top:50px;
+     font-size: 20px; 
+     padding:50px; 
+     font-weight:bold;
+   }
+ 
+   .button1:hover {
+     background-color: yellowgreen;
+     color: white;
+   }
+   
+ 
+  
+   
+ 
+ 
+ #button2:hover{
+   background-color: yellowgreen;
+     color: white;
+ 
+ }
+ 
+   .container{
+     background-color: #f0d99c;
+ 
+   }
+ 
+ 
+   .trimline {
+     border: none;
+     font-weight: bold;
+     font-size: 16px;
+     background-color: aqua;
+     padding: 5px;
+     margin-left: 20px;
+     margin-bottom: 20px;
+     
+   }
+   
+ 
+   #password22, #password23, #password24,
+   #password25, #password26, #password27,
+   #password28, #password29, #password30, 
+   #password31, #password32, #password33,
+   #password34, #password35, #password36{
+   border: none;
+   font-weight: bold;
+   font-size: 23px;
+   background-color: rgba(255, 251, 0, 0.692);
+   padding: 5px;
+   margin-bottom: 20px;
+ 
+   }
+ 
+ 
+ 
+ 
+ 
+   .accessbutton{
+     font-weight: bold; 
+     font-size:16px;
+     padding:2px;
+ 
+ }
+ 
+ .psvqsv{
+     font-weight: bold;
+     font-size: x-large;
+     padding: 7px;
+     margin-bottom: 20px;
+ 
+ }
+ 
+ .gbutton{
+   font-weight: bold; 
+   font-size:16px; 
+   color:green; 
+   padding:2px;
+ }
+ 
+ .nbutton{
+   font-weight: bold; 
+   font-size:16px; 
+   color:red; 
+   padding:2px;
+ }
+ 
+ 
+ 
+ 
+ /*download data to file styling*/
+ .bt{
+   margin-top: 20px;
+   margin-left: 520PX;
+ }
+ 
+ 
+ 
+ 
+   
+ 
+ #timer{
+   margin-left: 10px;
+ font-weight: bold;
+ }
+ 
+ 
+ 
+ 
+ 
+ .authorizeBy2{
+   float: left;
+ }
+ 
+ 
+ 
+ 
+     }
+      
+ 
+ 
+ 
+      /* Add Zoom Animation */
+      .animate {
+         -webkit-animation: animatezoom 0.6s;
+         animation: animatezoom 0.6s
+       }
+       
+       @-webkit-keyframes animatezoom {
+         from {-webkit-transform: scale(0)} 
+         to {-webkit-transform: scale(1)}
+       }
+         
+       @keyframes animatezoom {
+         from {transform: scale(0)} 
+         to {transform: scale(1)}
+       }
+ 
+ 
+       
+       </style>
+
+    
+    
+    
+    
+    
+    <!--the expansionform.html is used as a landing page when the user click no the form-->
+    <body class="body6"> 
+    
+                <header><div class="welcomepagelogostockin">
+                            <img src="../images/welcomepage_logo.png"  alt="mikano_logo"style="  max-width: 100%; height: auto;"/>
+                        </div>
+                </header>
+    <div class="clear"></div>
+
+
+    <form id="myForm">
+<main>
+  <div class="batchform">
+    <div class="batchforminput" >
+      <input  value="BATCH"  style="font-weight: bold; font-size:18px;" disabled><input type="text"  name="batch" id="txtBatch" style="font-weight: bold; font-size:18px;" ><br>
+      <input  value="MODEL" style="font-weight: bold; font-size:18px;" disabled><input type="text" name="model" id="txtModel" style="font-weight: bold; font-size:18px;" ><br>
+      <input  value="VIN NUMBER" style="font-weight: bold; font-size:18px;" disabled><input type="text" name="vin_number" id="txtVin" style="font-weight: bold; font-size:18px;"><br>
+      <input  value="ENGINE NUMBER" style="font-weight: bold; font-size:18px;" disabled><input type="text" name="engine_number" id="txtEngine" style="font-weight: bold; font-size:18px;"><br>
+      <input value="COLOR" style="font-weight: bold; font-size:18px;" disabled><input type="text" id="txtColor"  name="color" style="font-weight: bold; font-size:18px;"><br>
+      <input  value="KEYCODE" style="font-weight: bold; font-size:18px;" disabled><input type="text" id="txtKey" name="keycode" style="font-weight: bold; font-size:18px;"><br>
+      <input  value="TRANSMISSION TYPE" style="font-weight: bold; font-size:18px;" disabled><input type="text" name="transmission_type" id="txtTrans" style="font-weight: bold; font-size:18px;"><br>
+      <input  value="PRODUCTION DATE" style="font-weight: bold; font-size:18px;" disabled><input type="date"  name="production_date" id="txtProduct" required style="font-weight: bold; font-size:18px;" ><br>
+    </div>
+    <br>
+    
+    
+</div>
+
+</main>
+
+<div class="clear"></div>
+<div class="container">
+  <div class="clear"></div>
+<button style="font-weight: bold; margin-left: 50px;"><a href="batch01_dfm.html" target="_blank" rel="noopener noreferrer" > >>| operation</a></button>
+<section>
+  <div class="toperation1">
+    <!---is gave the radio button for good and not-good the same for one selection only-->
+ <button type="button" class="trimline" onclick="showButtont11()" style="color:blue;" id="startTimer1">Station01</button> <button class="gbutton" type="button" onclick="showGood01()" id="good1">G</button> <input type="radio" id="gd1check"  name="gdorngst01" class="hidden" value="good" ><button class="nbutton" type="button" onclick="notGood1()" id="bad1">NG</button><input type="radio" id="ng1check"  class="hidden"  name="gdorngst01" value="not good">
+ <input type="text" name="ng_reportst01" id="ng1"  class="hidden" placeholder="NG report"> <label for="password11"><input type="password" name="password11" size="15" id="password11" class="hidden" onkeyup="activateBtn01()" />
+<button type="button"  class="hidden" style="color:blue;" id="password22" onclick="showButtont22()" disabled>TV </button> <button id="resetTimer1" class="hidden" disabled>!</button></label> <button  class="accessbutton"   id='allow01'  disabled name="allow01" value='Allow Access' onclick="resetFunc01()" >Allow Access</button>
+          
+          <div id="showForm11" class="hidden"  style="margin-bottom:12px;">
+            <input  value="Match VIN and Engine number"  style="font-weight: bold; font-size:18px;" disabled><input type="text"  id="txtStrut1" style="font-weight: bold; font-size:18px;" ><br>
+            <br><input  value="Engine mounting bracket assembly" style="font-weight: bold; font-size:18px;" disabled><input type="text" id="txtAxle1" style="font-weight: bold; font-size:18px;"><br>
+            <br><input  value="Gear box (Transmission) mounting" style="font-weight: bold; font-size:18px;" disabled><input type="text" id="txtMuffler1" style="font-weight: bold; font-size:18px;"><br>
+            <br><input  value="Propeller shaft mounting (Transmission)" style="font-weight: bold; font-size:18px;" disabled><input type="text" id="txtFender1" style="font-weight: bold; font-size:18px;"><br>
+            <br><input  value="Propeller shaft stud nut" style="font-weight: bold; font-size:18px;" disabled><input type="text" id="txtBumper1" style="font-weight: bold; font-size:18px;"><br>
+            <br><input  value="Propeller shaft mounting (Transfer case)" style="font-weight: bold; font-size:18px;" disabled><input type="text" id="txtSpeed1" style="font-weight: bold; font-size:18px;"><br>
+            <br><input  value="Leaf spring frt bolt (rear axle mtg)" style="font-weight: bold; font-size:18px;" disabled><input type="text" id="txtLr1" style="font-weight: bold; font-size:18px;"><br>
+            <br><input  value="Leaf spring RR nut (rear axle mtg)" style="font-weight: bold; font-size:18px;" disabled><input type="text" id="txtHock1" style="font-weight: bold; font-size:18px;"><br>
+            <br><input  value="Leaf spring brkt to the axle" style="font-weight: bold; font-size:18px;" disabled><input type="text" id="txtPower1" style="font-weight: bold; font-size:18px;"><br>
+            <br><input  value="Shock absorber RR LH & RH" style="font-weight: bold; font-size:18px;" disabled><input type="text" id="txtMrear1" style="font-weight: bold; font-size:18px;"><br>
+            <br><input  value="Power steering hose connection bolt" style="font-weight: bold; font-size:18px;" disabled><input type="text" id="txtPiex1" style="font-weight: bold; font-size:18px;"><br>
+            <br><input  value="Rear bumper mtng bolt" style="font-weight: bold; font-size:18px;" disabled><input type="text" id="txtEwa1" style="font-weight: bold; font-size:18px;"><br>
+            <br><input  value="Exhaust pipe" style="font-weight: bold; font-size:18px;" disabled><input type="text" id="txtBov1" style="font-weight: bold; font-size:18px;"><br>
+            <br><input  value="Check the 2 fuel hose lock on the fuel Tank" style="font-weight: bold; font-size:18px;" disabled><input type="text" id="txtYawu1" style="font-weight: bold; font-size:18px;"><br>
+          </div>
+
+
+          <div id="showForm22" class="hidden"  style="margin-bottom:12px;">
+            <br>
+            <hr style="margin:10px;">
+            <input  value="Match VIN and Engine number"  style="font-weight: bold; font-size:18px;" disabled><input type="text"  id="txtStrut2" style="font-weight: bold; font-size:18px;" placeholder="input torque value"><br>
+            <br><input  value="Engine mounting bracket assembly" style="font-weight: bold; font-size:18px;" disabled><input type="text" id="txtAxle2" style="font-weight: bold; font-size:18px;"><br>
+            <br><input  value="Gear box (Transmission) mounting" style="font-weight: bold; font-size:18px;" disabled><input type="text" id="txtMuffler2" style="font-weight: bold; font-size:18px;"><br>
+            <br><input  value="Propeller shaft mounting (Transmission)" style="font-weight: bold; font-size:18px;" disabled><input type="text" id="txtFender2" style="font-weight: bold; font-size:18px;"><br>
+            <br><input  value="Propeller shaft stud nut" style="font-weight: bold; font-size:18px;" disabled><input type="text" id="txtBumper2" style="font-weight: bold; font-size:18px;"><br>
+            <br><input  value="Propeller shaft mounting (Transfer case)" style="font-weight: bold; font-size:18px;" disabled><input type="text" id="txtSpeed2" style="font-weight: bold; font-size:18px;"><br>
+            <br><input  value="Leaf spring frt bolt (rear axle mtg)" style="font-weight: bold; font-size:18px;" disabled><input type="text" id="txtLr2" style="font-weight: bold; font-size:18px;"><br>
+            <br><input  value="Leaf spring RR nut (rear axle mtg)" style="font-weight: bold; font-size:18px;" disabled><input type="text" id="txtHock2" style="font-weight: bold; font-size:18px;"><br>
+            <br><input  value="Leaf spring brkt to the axle" style="font-weight: bold; font-size:18px;" disabled><input type="text" id="txtPower2" style="font-weight: bold; font-size:18px;"><br>
+            <br><input  value="Shock absorber RR LH & RH" style="font-weight: bold; font-size:18px;" disabled><input type="text" id="txtMrear2" style="font-weight: bold; font-size:18px;"><br>
+            <br><input  value="Power steering hose connection bolt" style="font-weight: bold; font-size:18px;" disabled><input type="text" id="txtPiex2" style="font-weight: bold; font-size:18px;"><br>
+            <br><input  value="Rear bumper mtng bolt" style="font-weight: bold; font-size:18px;" disabled><input type="text" id="txtEwa2" style="font-weight: bold; font-size:18px;"><br>
+            <br><input  value="Exhaust pipe" style="font-weight: bold; font-size:18px;" disabled><input type="text" id="txtBov2" style="font-weight: bold; font-size:18px;"><br>
+            <br><input  value="Check the 2 fuel hose lock on the fuel Tank" style="font-weight: bold; font-size:18px;" disabled><input type="text" id="txtYawu2" style="font-weight: bold; font-size:18px;"><br>
+          </div>
+
+          <div id="timer">
+            <textarea class="timerDisplay1" id="timeTrimOne" style="width:250px; text-align:center; resize:none; font-weight:bold; font-size:16px; background-color:#ffffff; color:black;" name="st01_timer" disabled>00 : 00 : 00 : 000</textarea>
+
+        </div>
+    
+
+          
+          <div class="clear"></div>
+
+          <textarea name="st01_rtd" class="delayClaim" id="timeTrimOneDelay" placeholder="Reason for time delay" style="font-weight: bold; margin-top:10px;"></textarea>
+
+            <textarea name="body_reportst01" class="hidden" id="bodyrpt1" placeholder="Body Report" style="font-weight: bold; margin-top:10px;"></textarea>
+
+            
+          <div style="font-weight: bold;">
+            Online<input type="radio" name="onoroffst01" value="online" checked/>    
+            
+            Offline <input type="radio" name="onoroffst01" value="offline"/>
+          </div>
+          
+
+</div>
+
+        <div class="toperation1">
+<button type="button" class="trimline" onclick="showButtont12()" style="color:blue;" id="lock2" disabled>  Station02</button>  <button class="gbutton" type="button" onclick="showGood02()" id="allowG2" disabled>G</button><input type="radio" id="gd2check"  name="gdorngst02" value="good" class="hidden" >  <button class="nbutton" type="button" onclick="notGood2()" id="showng2" disabled>NG</button><input type="radio" id="ng2check"  class="hidden" name="ng_reportst02" value="not good">
+<input type="text" name="" id="ng2"  class="hidden" placeholder="NG report"> <label for="password12"><input type="password" name="password12" size="15" id="password12" class="hidden" onkeyup="activateBtn02()" /></label>
+<button type="button"  class="hidden" style="color:blue;" id="password23" onclick="showButtont23()" disabled>TV</button> <button id="resetTimer2" class="hidden" disabled>!</button><button  class="accessbutton"  id='allow02'  disabled name="allow02" value='Allow Access' onclick="resetFunc02()">Allow Access</button>
+       
+          <div id="showForm12" class="hidden"  style="margin-bottom:12px;">
+            <input  value="Cargo box (load box) A,B,C,D,E,FE,F MTG"  style="font-weight: bold; font-size:18px;" disabled><input type="text"  id="txtScrew1" style="font-weight: bold; font-size:18px;"><br>
+          </div>
+
+
+          <div id="showForm23" class="hidden"  style="margin-bottom:12px;">
+            <br>
+            <hr style="margin:10px;">
+
+            <input  value="Cargo box (load box) A,B,C,D,E,FE,F MTG"  style="font-weight: bold; font-size:18px;" disabled><input type="text"  id="txtScrew2" style="font-weight: bold; font-size:18px;" placeholder="input torque value"><br>
+          </div>
+
+
+          <div id="timer">
+            <textarea name="st02_timer" class="timerDisplay2" id="timeTrimTwo" style="width:250px; text-align:center; resize:none; font-weight:bold; font-size:16px; background-color:#ffffff; color:black;" disabled> 00 : 00 : 00 : 000</textarea>
+        </div>
+          
+
+          <div class="clear"></div>
+
+          <textarea name="st02_rtd" class="delayClaim" id="timeTrimTwoDelay" placeholder="Reason for time delay" style="font-weight: bold; margin-top:10px;"></textarea>
+          
+          <textarea name="body_reportst02" class="hidden" id="bodyrpt2" placeholder="Body Report" style="font-weight: bold; margin-top:10px;"></textarea>
+
+          <div style="font-weight: bold;">
+            Online<input type="radio" name="onoroffst02" value="online" checked/>    
+            
+            Offline <input type="radio" name="onoroffst02" value="offline"/>
+          </div>
+
+        </div>
+        
+          
+        
+<div class="toperation1">
+<button type="button" class="trimline" onclick="showButtont13()" style="color:blue;" id="lock3" disabled>  Station03</button>  <button class="gbutton" type="button" onclick="showGood03()" id="allowG3" disabled>G</button><input type="radio" id="gd3check"  name="gdorngst03" value="good" class="hidden" >  <button class="nbutton" type="button" onclick="notGood3()" id="showng3" disabled>NG</button><input type="radio" id="ng3check"  class="hidden" name="gdorngst03" value="not good">
+<input type="text" name="ng_reportst03" id="ng3"  class="hidden" placeholder="NG report"> <label for="password13"><input type="password" name="password13" size="15" id="password13" class="hidden" onkeyup="activateBtn03()" /></label> <button type="button"  class="hidden" style="color:blue;" id="password24" onclick="showButtont24()"disabled>TV</button>
+<button id="resetTimer3" class="hidden" disabled>!</button> <button  class="accessbutton"  id='allow03'  disabled name="allow03" value='Allow Access' onclick="resetFunc03()">Allow Access</button>
+       
+          <div id="showForm13" class="hidden"  style="margin-bottom:12px;">
+            <input  value="CAB MTG A,B,C,D,E,F,G,H MTG"  style="font-weight: bold; font-size:18px;" disabled><input type="text"  id="txtBracket1" style="font-weight: bold; font-size:18px;"><br>
+            <br><input  value="Steering colum fitment (strng shaft)" style="font-weight: bold; font-size:18px;" disabled><input type="text" id="txtDrive1" style="font-weight: bold; font-size:18px;"><br>
+            <br><input  value="(3)-Way catalytic Converter Asembly (V-shaped Clamp)" style="font-weight: bold; font-size:18px;" disabled><input type="text" id="txtClamp1" style="font-weight: bold; font-size:18px;"><br>
+            <br><input  value="Steering Wheel mtg" style="font-weight: bold; font-size:18px;" disabled><input type="text" id="txtHose1" style="font-weight: bold; font-size:18px;"><br>
+            <br><input  value="Tire mtg" style="font-weight: bold; font-size:18px;" disabled><input type="text" id="txtHosebrk1" style="font-weight: bold; font-size:18px;"><br>
+            <br><input  value="AC Connection at compressor end" style="font-weight: bold; font-size:18px;" disabled><input type="text" id="txtSensor1" style="font-weight: bold; font-size:18px;"><br>
+            <br><input  value="Seat Assy front RH/LH" style="font-weight: bold; font-size:18px;" disabled><input type="text" id="txtConverter1" style="font-weight: bold; font-size:18px;"><br>
+          </div>
+
+
+          <div id="showForm24" class="hidden"  style="margin-bottom:12px;">
+            <br>
+            <hr style="margin:10px;">
+
+            <input  value="CAB MTG A,B,C,D,E,F,G,H MTG"  style="font-weight: bold; font-size:18px;" disabled><input type="text"  id="txtBracket2" style="font-weight: bold; font-size:18px;" placeholder="input torque value"><br>
+            <br><input  value="Steering colum fitment (strng shaft)" style="font-weight: bold; font-size:18px;" disabled><input type="text" id="txtDrive2" style="font-weight: bold; font-size:18px;"><br>
+            <br><input  value="Steering Wheel mtg" style="font-weight: bold; font-size:18px;" disabled><input type="text" id="txtClamp2" style="font-weight: bold; font-size:18px;"><br>
+            <br><input  value="Tire mtg" style="font-weight: bold; font-size:18px;" disabled><input type="text" id="txtHose2" style="font-weight: bold; font-size:18px;"><br>
+            <br><input  value="AC Connection at compressor end" style="font-weight: bold; font-size:18px;" disabled><input type="text" id="txtHosebrk2" style="font-weight: bold; font-size:18px;"><br>
+            <br><input  value="Seat Assy front RH/LH" style="font-weight: bold; font-size:18px;" disabled><input type="text" id="txtSensor2" style="font-weight: bold; font-size:18px;"><br>
+          </div>
+          
+        
+
+          <div id="timer">
+            <textarea name="st03_timer" class="timerDisplay3" id="timeTrimThree" style="width:250px; text-align:center; resize:none; font-weight:bold; font-size:16px; background-color:#ffffff; color:black;" disabled> 00 : 00 : 00 : 000</textarea>
+
+        </div>
+
+          <div class="clear"></div>  
+
+          <textarea name="st03_rtd" class="delayClaim" id="timeTrimThreeDelay" placeholder="Reason for time delay" style="font-weight: bold; margin-top:10px;"></textarea>
+          <textarea name="body_reportst03" class="hidden" id="bodyrpt3" placeholder="Body Report" style="font-weight: bold; margin-top:10px;"></textarea>
+
+
+
+          <div style="font-weight: bold;">
+            Online<input type="radio" name="onoroffst03" value="online" checked/>    
+            
+            Offline <input type="radio" name="onoroffst03" value="offline"/>
+          </div>
+
+        </div>
+
+       
+        
+
+    
+          <div class="clear"></div>
+          <div class="toperation2">
+            <button type="button" class="trimline" onclick="showButtonc14()" style="color:blue;" id="lock4" disabled>Station04</button>  <button class="gbutton" type="button" onclick="showGood04()" id="allowG4" disabled>G</button><input type="radio" id="gd4check"  name="gdorngst04" value="good" class="hidden" >  <button class="nbutton" type="button" onclick="notGood4()" id="showng4" disabled>NG</button><input type="radio" id="ng4check"  class="hidden" name="gdorngst04" value="not good">
+            <input type="text" name="ng_reportst04" id="ng4"  class="hidden" placeholder="NG report"><label for="password14"><input type="password" name="password" size="15" id="password14" class="hidden" onkeyup="activateBtn04()" /></label>
+            <button id="resetTimer4" class="hidden" disabled>!</button> <button  class="accessbutton" id='allow04'  disabled name="allow04" value='Allow Access' onclick="resetFunc04()">Final</button>
+         
+            <div id="showForm14" class="hidden"  style="margin-bottom:12px;">
+              <input  value="ATF"  style="font-weight: bold; font-size:18px;" disabled><input type="text"  id="txtStrut11" style="font-weight: bold; font-size:18px;"><br>
+              <br><input  value="BRAKE FLUID" style="font-weight: bold; font-size:18px;" disabled><input type="text" id="txtAxle11" style="font-weight: bold; font-size:18px;"><br>
+              <br><input  value="AC GAS" style="font-weight: bold; font-size:18px;" disabled><input type="text" id="txtMuffler11" style="font-weight: bold; font-size:18px;"><br>
+              <br><input  value="WIPER" style="font-weight: bold; font-size:18px;" disabled><input type="text" id="txtFender11" style="font-weight: bold; font-size:18px;"><br>
+            </div>
+
+
+
+            <div id="timer">
+              <textarea name="st04_timer" class="timerDisplay4" id="timeChasisOne" style="width:250px; text-align:center; resize:none; font-weight:bold; font-size:16px; background-color:#ffffff; color:black;" disabled> 00 : 00 : 00 : 000</textarea>
+  
+          </div>
+
+            <div class="clear"></div>
+            
+  
+            <textarea name="st04_rtd" class="delayClaim" id="timeChasisOneDelay" placeholder="Reason for time delay" style="font-weight: bold; margin-top:10px;"></textarea>
+  
+            <div style="font-weight: bold;">
+              Online<input type="radio" name="onoroffst04" value="online" checked/>    
+              
+              Offline <input type="radio" name="onoroffst04" value="offline"/>
+            </div>
+           </div>
+
+
+
+</section>
+    
+
+    
+  <div class="clear"></div>
+
+  <div class="clear1"></div>
+  <strong class="claimbox">
+    <div class="claimupload">
+   <P id="txtDamages"><strong style="color: #f44336;">*</strong>Please confirm if there were  damages on this Batch:</P>
+    <input  name="damages_yes"   style="width:8%; font-weight:bold;" id="txtYes1" placeholder="yes" > <input  name="damages_no"  style="width:8%; font-weight:bold;" id="txtNo1" placeholder="no"><br>
+
+
+    <strong style="color: #f44336;">*</strong> If your answers is yes please insert a photo:
+    <button> <a href="https://drive.google.com/drive/folders/1bUSXSaxhNUs1qWKBhi_FDSM6QqwOFSjZ" target="_blank" rel="noopener noreferrer">Insert a photo</a></button>
+
+    <br>
+    <strong style="color: #f44336;">*</strong> If your answers is yes please insert a video:
+    <button><a href="https://drive.google.com/drive/folders/1pLl9L7YzCER0QVqXysKBc1PARU8Hgb8f" target="_blank" rel="noopener noreferrer">Insert a video</a></button>
+    <br>
+    <br>
+    <p id="txtCharged"><strong style="color: #f44336;">*</strong>Charged:</p>
+    <input  name="charged_yes"   style="width:8%; font-weight:bold;" id="txtYes11" placeholder="yes"> <input  name="charged_no"  style="width:8%; font-weight:bold;" id="txtNo11" placeholder="no"><br>
+    <br>
+   <p id="txtFree"><strong style="color: #f44336;">*</strong>Free of Charge:</p>
+    <input  name="free_of_charge_yes"   style="width:8%; font-weight:bold;" id="txtYes22" placeholder="yes"> <input  name="free_of_charge_no"  style="width:8%; font-weight:bold;" id="txtNo22" placeholder="no" ><br>
+    <br>
+    <div class="upclaim">
+    <strong style="color: #f44336;">*</strong>Upload claim report: <br>
+    <button> <a href="https://drive.google.com/drive/folders/1Le2K_V8PwRNKDGhbGXoBIRFhsrVomW13" target="_blank" rel="noopener noreferrer">Insert a claim</a></button><br>
+     Or <br>
+    </div>
+    <p ><strong style="color: #f44336;">*</strong>Right a short report on claim:</p>
+      <textarea name="short_report" id="txtClaim" style="font-weight:bold;"  placeholder="Input Claim"></textarea>
+      <div class="clear"></div>
+
+    <div style="float:left; margin-right:5px; text-align:center; margin-top:10px;">
+    <strong>Authorized by production</strong> <br>
+      <input type="text" name="authorized_by_production" placeholder="position" id="positionOne" >
+    </div>
+  
+  
+    <div style="text-align:center; margin-top:10px; float:left;">
+      <strong>Authorized by Quality Control</strong> <br>
+        <input type="text" name="authorized_by_qc" placeholder="position" id="positionTwo" >
+      </div>
+  </div>
+  </strong>
+
+
+
+</form>
+
+
+  
+    <div >
+     <button  class="button1" onclick="SubForm()">Submit</button>
+   
+   </div>
+  
+
+
+ <div class="clear"></div>
+ <div id="showjobcd" class="hidden">
+  <div class="bt">
+    <button id="create">save_to_file</button><a download="jobcard.txt" id="downloadlink" style="display: none">Download</a>
+    <button onclick="window.print();return false;" class="print-page">Print Page</button>
+     </div>
+ </div>
+
+    <div class="clear"></div>
+        <footer>  
+             <hr>
+    <div class="copyright">
+       <small>copyright&copy;2023Mikano</small> 
+    </div>
+    
+    </footer>
+
+<script type='text/javascript'>
+  /////this code is to prevent the page from refreshing when allow acess button is clicked
+  var form = document.getElementById("myForm");
+  function handleForm(event) { event.preventDefault(); } 
+  form.addEventListener('submit', handleForm);
+
+  
+
+
+    function notGood1() {
+        var div1 = document.getElementById("ng1");
+        var div2 = document.getElementById("ng1check");
+        div1.classList.toggle('hidden');
+        div2.classList.toggle('hidden'); 
+      
+      }
+
+      function notGood2() {
+        var div1 = document.getElementById("ng2");
+        var div2 = document.getElementById("ng2check");
+        div1.classList.toggle('hidden');
+        div2.classList.toggle('hidden'); 
+      
+      }
+
+
+      function notGood3() {
+        var div1 = document.getElementById("ng3");
+        var div2 = document.getElementById("ng3check");
+        div1.classList.toggle('hidden');
+        div2.classList.toggle('hidden'); 
+      
+      }
+
+       // for chasis line
+       function notGood4() {
+        var div1 = document.getElementById("ng4");
+        var div2 = document.getElementById("ng4check");
+        div1.classList.toggle('hidden');
+        div2.classList.toggle('hidden'); 
+      
+      }
+
+
+
+     
+
+      ///TRIM LINE
+      //////////////////////////////////////
+
+//this is to show trim(T01)
+      function showButtont11(){
+        var div = document.getElementById("showForm11");
+      div.classList.toggle('hidden');
+      }
+
+      function showButtont22(){
+        var div = document.getElementById("showForm22");
+      div.classList.toggle('hidden');
+      }
+
+//this is to show the password input for trim(T01)
+      function showGood01() {
+        var div1 = document.getElementById("password11");
+        var div2 = document.getElementById("password22");
+        var div3 = document.getElementById("resetTimer1");
+        var div4 = document.getElementById("gd1check")
+        var div5 = document.getElementById("bodyrpt1");
+      div1.classList.toggle('hidden');
+      div2.classList.toggle('hidden');
+      div3.classList.toggle('hidden');
+      div4.classList.toggle('hidden');
+      div5.classList.toggle('hidden');
+ 
+      }
+
+      //this is to activate the button for trim(T01) Allow Access
+      function activateBtn01() {
+        pass = document.getElementById('password11').value;
+        console.log(pass);
+        document.getElementById('password22').disabled = pass !== '1917'; 
+        document.getElementById('allow01').disabled = pass !== '1917'; 
+        document.getElementById('allow01').style.color = "white";
+        document.getElementById('allow01').style.background = "green";
+        }
+
+
+//this is used to to disable the AllowAccess button after first click
+const button = document.getElementById('allow01');
+const button1 = document.getElementById('startTimer1'); // disable the buttons when the allow button is clicked
+const button2 = document.getElementById('good1');
+const button3 = document.getElementById('bad1'); 
+const button4 = document.getElementById('password22'); 
+
+button.addEventListener('click', () => {
+  button.disabled = true;
+  button1.disabled = true;
+  button2.disabled = true;
+  button3.disabled = true;
+  button4.disabled = true;
+});
+
+
+
+
+function resetFunc01(){
+        countDownDate = new Date(); localStorage.setItem('startDate', countDownDate);
+        document.getElementById("lock2").disabled = false;
+        document.getElementById("showng2").disabled = false;
+        document.getElementById("allowG2").disabled = false;
+
+        }
+
+
+
+  ///////////////////////////////////////////////////
+        //this is to show trim(T02)
+      function showButtont12(){
+        var div = document.getElementById("showForm12");
+      div.classList.toggle('hidden');
+      }
+
+      function showButtont23(){
+        var div = document.getElementById("showForm23");
+      div.classList.toggle('hidden');
+      }
+
+//this is to show the password input for trim(T02)
+      function showGood02() {
+        var div1 = document.getElementById("password12");
+        var div2 = document.getElementById("password23");
+        var div3 = document.getElementById("resetTimer2");
+        var div4 = document.getElementById("gd2check");
+        var div5 = document.getElementById("bodyrpt2");
+      div1.classList.toggle('hidden');
+      div2.classList.toggle('hidden');
+      div3.classList.toggle('hidden');
+      div4.classList.toggle('hidden');
+      div5.classList.toggle('hidden');
+      
+      }
+
+      //this is to activate the button for trim(T02) Allow Access
+      function activateBtn02() {
+        pass = document.getElementById('password12').value;
+        console.log(pass);
+        document.getElementById('password23').disabled = pass !== '1917';
+        document.getElementById('allow02').disabled = pass !== '1917';
+        document.getElementById('allow02').style.color = 'white';
+        document.getElementById('allow02').style.background = 'green';
+        }
+
+
+//this is used to to disable the AllowAccess button after first click
+const button02 = document.getElementById('allow02');
+const button11 = document.getElementById('lock2'); // disable the buttons when the allow button is clicked
+const button22 = document.getElementById('allowG2');
+const button33 = document.getElementById('showng2'); 
+const button44 = document.getElementById('password23'); 
+
+button02.addEventListener('click', () => {
+  button02.disabled = true;
+  button11.disabled = true;
+  button22.disabled = true;
+  button33.disabled = true;
+  button44.disabled = true;
+});
+
+        
+        function resetFunc02(){
+        countDownDate = new Date(); localStorage.setItem('startDate', countDownDate);
+        document.getElementById("lock3").disabled = false;
+        document.getElementById("showng3").disabled = false;
+        document.getElementById("allowG3").disabled = false;
+        }
+
+    ///////////////////////////////////////////////
+
+      //this is to show trim(T03)
+      function showButtont13(){
+        var div = document.getElementById("showForm13");
+      div.classList.toggle('hidden');
+      }
+
+      function showButtont24(){
+        var div = document.getElementById("showForm24");
+      div.classList.toggle('hidden');
+      }
+
+//this is to show the password input for trim(T03)
+      function showGood03() {
+        var div1 = document.getElementById("password13");
+        var div2 = document.getElementById("password24");
+        var div3 = document.getElementById("resetTimer3");
+        var div4 = document.getElementById("gd3check");
+        var div5 = document.getElementById("bodyrpt3");
+      div1.classList.toggle('hidden');
+      div2.classList.toggle('hidden');
+      div3.classList.toggle('hidden');
+      div4.classList.toggle('hidden');
+      div5.classList.toggle('hidden');
+      
+      }
+
+      //this is to activate the button for trim(T03) Allow Access
+      function activateBtn03() {
+        pass = document.getElementById('password13').value;
+        console.log(pass);
+        document.getElementById('password24').disabled = pass !== '1917';
+        document.getElementById('allow03').disabled = pass !== '1917';
+        document.getElementById('allow03').style.color = 'white';
+        document.getElementById('allow03').style.background = 'green';
+        
+        }
+
+        //this is used to to disable the AllowAccess button after first click
+        const button012 = document.getElementById('allow03');
+const button111 = document.getElementById('lock3'); // disable the buttons when the allow button is clicked
+const button222 = document.getElementById('allowG3');
+const button333 = document.getElementById('showng3'); 
+const button444 = document.getElementById('password24'); 
+
+button012.addEventListener('click', () => {
+  button012.disabled = true;
+  button111.disabled = true;
+  button222.disabled = true;
+  button333.disabled = true;
+  button444.disabled = true;
+});
+
+        function resetFunc03(){
+        countDownDate = new Date(); localStorage.setItem('startDate', countDownDate);
+        document.getElementById("lock4").disabled = false;
+        document.getElementById("showng4").disabled = false;
+        document.getElementById("allowG4").disabled = false;
+        }
+
+
+
+
+                //CHASIS LINE
+      
+   ///////////////////////////////////////////////
+
+      //this is to show chasis(C01)
+      function showButtonc14(){
+        var div = document.getElementById("showForm14");
+      div.classList.toggle('hidden');
+      }
+
+      function showButtont25(){
+        var div = document.getElementById("showForm25");
+      div.classList.toggle('hidden');
+      }
+
+//this is to show the password input for chasis(C01)
+      function showGood04() {
+        var div1 = document.getElementById("password14");
+        var div2 = document.getElementById("resetTimer4");
+        var div3 = document.getElementById("gd4check");
+      div1.classList.toggle('hidden');
+      div2.classList.toggle('hidden');
+      div3.classList.toggle('hidden');
+
+      
+      }
+
+      //this is to activate the button for chasis(C01) Allow Access
+      function activateBtn04() {
+        pass = document.getElementById('password14').value;
+        console.log(pass);
+        document.getElementById('allow04').disabled = pass !== '1918';
+        document.getElementById('allow04').style.color = 'white';
+        document.getElementById('allow04').style.background = 'green';
+        }
+
+
+        //this is used to to disable the AllowAccess button after first click
+        const button0122 = document.getElementById('allow04');
+const button1111 = document.getElementById('lock4'); // disable the buttons when the allow button is clicked
+const button2222 = document.getElementById('allowG4');
+const button3333 = document.getElementById('showng4'); 
+
+button0122.addEventListener('click', () => {
+  button0122.disabled = true;
+  button1111.disabled = true;
+  button2222.disabled = true;
+  button3333.disabled = true;
+
+});
+        function resetFunc04(){
+        countDownDate = new Date(); localStorage.setItem('startDate', countDownDate);
+        document.getElementById("lock5").disabled = false;
+        document.getElementById("notGood5").disabled = false;
+        document.getElementById("allowG5").disabled = false;
+        }
+
+
+
+    
+
+
+        //////////////////////////////////////
+        //timer T01
+
+
+        let [milliseconds1,seconds1,minutes1,hours1] = [0,0,0,0];
+        let timerRef1 = document.querySelector('.timerDisplay1');
+        let int1 = null;
+        /// start timer
+        document.getElementById('startTimer1').addEventListener('click', ()=>{
+            if(int1!==null){
+                clearInterval(int1);
+            }
+            int1 = setInterval(displayTimer1,10);
+        });
+        /// stop timer
+        document.getElementById('allow01').addEventListener('click', ()=>{
+            clearInterval(int1);
+        });
+        /// reset timer
+        document.getElementById('resetTimer1').addEventListener('click', ()=>{
+            clearInterval(int1);
+            [milliseconds1,seconds1,minutes1,hours1] = [0,0,0,0];
+            timerRef1.innerHTML = 'Hr00 : Min00 : Sec00 : 000 ';
+        });
+        
+        function displayTimer1(){
+            milliseconds1+=10;
+            if(milliseconds1 == 1000){
+                milliseconds1 = 0;
+                seconds1++;
+                if(seconds1 == 60){
+                    seconds1 = 0;
+                    minutes1++;
+                    if(minutes1 == 60){
+                        minutes1 = 0;
+                        hours1++;
+                    }
+                }
+            }
+            let h = hours1 < 10 ? "Hr0" + hours1 : hours1;
+            let m = minutes1 < 10 ? "Min0" + minutes1 : minutes1;
+            let s = seconds1 < 10 ? "Sec0" + seconds1 : seconds1;
+            let ms = milliseconds1 < 10 ? "00" + milliseconds1 : milliseconds1 < 100 ? "0" + milliseconds1 : milliseconds1;
+        
+            timerRef1.innerHTML = ` ${h} : ${m} : ${s} : ${ms}`;
+        }
+        
+        //////////////////////////////////////
+        //timer T02
+        
+        let [milliseconds2,seconds2,minutes2,hours2] = [0,0,0,0];
+        let timerRef2 = document.querySelector('.timerDisplay2');
+        let int2 = null;
+        /// start timer
+        document.getElementById('allow01').addEventListener('click', ()=>{
+            if(int2!==null){
+                clearInterval(int2);
+            }
+            int2 = setInterval(displayTimer2,10);
+        });
+        /// stop timer
+        document.getElementById('allow02').addEventListener('click', ()=>{
+            clearInterval(int2);
+        });
+        /// reset timer
+        document.getElementById('resetTimer2').addEventListener('click', ()=>{
+            clearInterval(int2);
+            [milliseconds2,seconds2,minutes2,hours2] = [0,0,0,0];
+            timerRef2.innerHTML = 'Hr00 : Min00 : Sec00 : 000 ';
+        });
+        
+        function displayTimer2(){
+            milliseconds2+=10;
+            if(milliseconds2 == 1000){
+                milliseconds2 = 0;
+                seconds2++;
+                if(seconds2 == 60){
+                    seconds2 = 0;
+                    minutes2++;
+                    if(minutes2 == 60){
+                        minutes2 = 0;
+                        hours2++;
+                    }
+                }
+            }
+            let h = hours2 < 10 ? "Hr0" + hours2 : hours2;
+            let m = minutes2 < 10 ? "Min0" + minutes2 : minutes2;
+            let s = seconds2 < 10 ? "Sec0" + seconds2 : seconds2;
+            let ms = milliseconds2 < 10 ? "00" + milliseconds2 : milliseconds2 < 100 ? "0" + milliseconds2 : milliseconds2;
+        
+            timerRef2.innerHTML = ` ${h} : ${m} : ${s} : ${ms}`;
+        }
+
+
+
+        //////////////////////////////////////
+        //timer T03
+        
+        let [milliseconds3,seconds3,minutes3,hours3] = [0,0,0,0];
+        let timerRef3 = document.querySelector('.timerDisplay3');
+        let int3 = null;
+        /// start timer
+        document.getElementById('allow02').addEventListener('click', ()=>{
+            if(int3!==null){
+                clearInterval(int3);
+            }
+            int3 = setInterval(displayTimer3,10);
+        });
+        /// stop timer
+        document.getElementById('allow03').addEventListener('click', ()=>{
+            clearInterval(int3);
+        });
+        /// reset timer
+        document.getElementById('resetTimer3').addEventListener('click', ()=>{
+            clearInterval(int3);
+            [milliseconds3,seconds3,minutes3,hours3] = [0,0,0,0];
+            timerRef3.innerHTML = 'Hr00 : Min00 : Sec00 : 000 ';
+        });
+        
+        function displayTimer3(){
+            milliseconds3+=10;
+            if(milliseconds3 == 1000){
+                milliseconds3 = 0;
+                seconds3++;
+                if(seconds3 == 60){
+                    seconds3 = 0;
+                    minutes3++;
+                    if(minutes3 == 60){
+                        minutes3 = 0;
+                        hours3++;
+                    }
+                }
+            }
+            let h = hours3 < 10 ? "Hr0" + hours3 : hours3;
+            let m = minutes3 < 10 ? "Min0" + minutes3 : minutes3;
+            let s = seconds3 < 10 ? "Sec0" + seconds3 : seconds3;
+            let ms = milliseconds3 < 10 ? "00" + milliseconds3 : milliseconds3 < 100 ? "0" + milliseconds3 : milliseconds3;
+        
+            timerRef3.innerHTML = ` ${h} : ${m} : ${s} : ${ms}`;
+        }
+
+
+        //////////////////////////////////////
+        //timer C01
+        
+        let [milliseconds4,seconds4,minutes4,hours4] = [0,0,0,0];
+        let timerRef4 = document.querySelector('.timerDisplay4');
+        let int4 = null;
+        /// start timer
+        document.getElementById('allow03').addEventListener('click', ()=>{
+            if(int4!==null){
+                clearInterval(int4);
+            }
+            int4 = setInterval(displayTimer4,10);
+        });
+        /// stop timer
+        document.getElementById('allow04').addEventListener('click', ()=>{
+            clearInterval(int4);
+        });
+        /// reset timer
+        document.getElementById('resetTimer4').addEventListener('click', ()=>{
+            clearInterval(int4);
+            [milliseconds4,seconds4,minutes4,hours4] = [0,0,0,0];
+            timerRef4.innerHTML = 'Hr00 : Min00 : Sec00 : 000 ';
+        });
+        
+        function displayTimer4(){
+            milliseconds4+=10;
+            if(milliseconds4 == 1000){
+                milliseconds4 = 0;
+                seconds4++;
+                if(seconds4 == 60){
+                    seconds4 = 0;
+                    minutes4++;
+                    if(minutes4 == 60){
+                        minutes4 = 0;
+                        hours4++;
+                    }
+                }
+            }
+            let h = hours4 < 10 ? "Hr0" + hours4 : hours4;
+            let m = minutes4 < 10 ? "Min0" + minutes4 : minutes4;
+            let s = seconds4 < 10 ? "Sec0" + seconds4 : seconds4;
+            let ms = milliseconds4 < 10 ? "00" + milliseconds4 : milliseconds4 < 100 ? "0" + milliseconds4 : milliseconds4;
+        
+            timerRef4.innerHTML = ` ${h} : ${m} : ${s} : ${ms}`;
+        }
+
+
+
+
+
+
+
+
+        ////////////////////////////
+        ///SCRIPT FOR DOWNLOADING PAGE FILE
+        window.onload=function(){
+          (function () {
+          var textFile = null,
+          makeTextFile = function (text) {
+          var data = new Blob([text], {type: 'text/plain'});
+          if (textFile !== null) {
+          window.URL.revokeObjectURL(textFile);
+          }
+          textFile = window.URL.createObjectURL(data);
+          return textFile;
+          };
+          
+
+          ////////////////////////////////////////////
+          ////Batch details
+          var create = document.getElementById('create'),
+          batch = document.getElementById('txtBatch');
+
+          var create = document.getElementById('create'),
+          model = document.getElementById('txtModel');
+          
+          var create = document.getElementById('create'),
+          vin = document.getElementById('txtVin');
+
+          var create = document.getElementById('create'),
+          engine = document.getElementById('txtEngine');
+
+          var create = document.getElementById('create'),
+          color = document.getElementById('txtColor');
+
+          var create = document.getElementById('create'),
+          keycode = document.getElementById('txtKey');
+
+          var create = document.getElementById('create'),
+          transmission = document.getElementById('txtTrans');
+
+          var create = document.getElementById('create'),
+          productdate = document.getElementById('txtProduct');
+
+
+
+          ////////////////////////////////////////
+          /////StationOne
+          ///Title
+          var create = document.getElementById('create'),
+          trimone = document.getElementById('startTimer1');
+
+          var create = document.getElementById('create'),
+          strut1 = document.getElementById('txtStrut1');
+
+          var create = document.getElementById('create'),
+          axle1 = document.getElementById('txtAxle1');
+
+          var create = document.getElementById('create'),
+          muffler1 = document.getElementById('txtMuffler1');
+
+          var create = document.getElementById('create'),
+          fender1 = document.getElementById('txtFender1');
+
+          var create = document.getElementById('create'),
+          bumper1 = document.getElementById('txtBumper1');
+
+          var create = document.getElementById('create'),
+          speed1 = document.getElementById('txtSpeed1');
+
+          var create = document.getElementById('create'),
+          lrstrut1 = document.getElementById('txtLr1');
+
+          var create = document.getElementById('create'),
+          hock1 = document.getElementById('txtHock1');
+
+          var create = document.getElementById('create'),
+          power1 = document.getElementById('txtPower1');
+
+          var create = document.getElementById('create'),
+          mrear1 = document.getElementById('txtMrear1');
+
+          var create = document.getElementById('create'),
+          piex1 = document.getElementById('txtPiex1');
+
+          var create = document.getElementById('create'),
+          ewa1 = document.getElementById('txtEwa1');
+
+          var create = document.getElementById('create'),
+          bov1 = document.getElementById('txtBov1');
+
+          var create = document.getElementById('create'),
+          yawu1 = document.getElementById('txtYawu1');
+
+          
+
+          ////////////////////////////////////////
+          /////StationOne TV
+          ///Title
+          var create = document.getElementById('create'),
+          tvtrimone = document.getElementById('password22');
+
+          var create = document.getElementById('create'),
+          strut2 = document.getElementById('txtStrut2');
+
+          var create = document.getElementById('create'),
+          axle2 = document.getElementById('txtAxle2');
+
+          var create = document.getElementById('create'),
+          muffler2 = document.getElementById('txtMuffler2');
+
+          var create = document.getElementById('create'),
+          fender2 = document.getElementById('txtFender2');
+
+          var create = document.getElementById('create'),
+          bumper2 = document.getElementById('txtBumper2');
+
+          var create = document.getElementById('create'),
+          speed2 = document.getElementById('txtSpeed2');
+
+          var create = document.getElementById('create'),
+          lrstrut2 = document.getElementById('txtLr2');
+
+          var create = document.getElementById('create'),
+          hock2 = document.getElementById('txtHock2');
+
+          var create = document.getElementById('create'),
+          power2 = document.getElementById('txtPower2');
+
+          var create = document.getElementById('create'),
+          mrear2 = document.getElementById('txtMrear2');
+
+          var create = document.getElementById('create'),
+          piex2 = document.getElementById('txtPiex2');
+
+          var create = document.getElementById('create'),
+          ewa2 = document.getElementById('txtEwa2');
+
+          var create = document.getElementById('create'),
+          bov2 = document.getElementById('txtBov2');
+
+          var create = document.getElementById('create'),
+          yawu2 = document.getElementById('txtYawu2');
+
+          //////StationOne NG Report 
+          var create = document.getElementById('create'),
+          ngtrimone = document.getElementById('ng1');
+
+           //////StationOne Time Report 
+          var create = document.getElementById('create'),
+          timetrimone = document.getElementById('timeTrimOne');
+
+          //////StationOne Time Report 
+          var create = document.getElementById('create'),
+          timetrimonedelay = document.getElementById('timeTrimOneDelay');
+
+          //////StationOne Body Report 
+          var create = document.getElementById('create'),
+          st01body = document.getElementById('bodyrpt1');          
+
+          ////////////////////////////////////////
+          /////StationTwo
+          ///Title
+          var create = document.getElementById('create'),
+          trimtwo = document.getElementById('lock2');
+
+          var create = document.getElementById('create'),
+          screw1 = document.getElementById('txtScrew1');
+
+          ////////////////////////////////////////
+          /////StationTwo TV
+          ///Title
+          var create = document.getElementById('create'),
+          tvtrimtwo = document.getElementById('password23');
+
+          var create = document.getElementById('create'),
+          screw2 = document.getElementById('txtScrew2');
+
+          //////StationTwo NG Report 
+          var create = document.getElementById('create'),
+          ngtrimtwo = document.getElementById('ng2');
+
+           //////StationTwo Time Report 
+          var create = document.getElementById('create'),
+          timetrimtwo = document.getElementById('timeTrimTwo');
+
+          //////StationTwo Time Report 
+          var create = document.getElementById('create'),
+          timetrimtwodelay = document.getElementById('timeTrimTwoDelay');
+
+          //////StationTwo Body Report 
+          var create = document.getElementById('create'),
+          st02body = document.getElementById('bodyrpt2');          
+
+          ////////////////////////////////////////
+          /////StationThree
+          ///Title
+          var create = document.getElementById('create'),
+          trimthree = document.getElementById('lock3');
+
+          var create = document.getElementById('create'),
+          bracket1 = document.getElementById('txtBracket1');
+
+          var create = document.getElementById('create'),
+          drive1 = document.getElementById('txtDrive1');
+
+          var create = document.getElementById('create'),
+          clamp1 = document.getElementById('txtClamp1');
+
+          var create = document.getElementById('create'),
+          hose1 = document.getElementById('txtHose1');
+
+          var create = document.getElementById('create'),
+          hosebrk1 = document.getElementById('txtHosebrk1');
+
+          var create = document.getElementById('create'),
+          sensor1 = document.getElementById('txtSensor1');
+
+
+
+          ////////////////////////////////////////
+          /////StationThree TV
+          ///Title
+          var create = document.getElementById('create'),
+          tvtrimthree = document.getElementById('password24');
+
+          var create = document.getElementById('create'),
+          bracket2 = document.getElementById('txtBracket2');
+
+          var create = document.getElementById('create'),
+          drive2= document.getElementById('txtDrive2');
+
+          var create = document.getElementById('create'),
+          clamp2 = document.getElementById('txtClamp2');
+
+          var create = document.getElementById('create'),
+          hose2 = document.getElementById('txtHose2');
+
+          var create = document.getElementById('create'),
+          hosebrk2 = document.getElementById('txtHosebrk2');
+
+          var create = document.getElementById('create'),
+          sensor2 = document.getElementById('txtSensor2');
+
+
+
+          //////StationThree NG Report 
+          var create = document.getElementById('create'),
+          ngtrimthree = document.getElementById('ng3');
+
+           //////StationThree Time Report 
+          var create = document.getElementById('create'),
+          timetrimthree = document.getElementById('timeTrimThree');
+
+          //////StationThree Time Report 
+          var create = document.getElementById('create'),
+          timetrimthreedelay = document.getElementById('timeTrimThreeDelay');
+
+          //////StationThree Body Report 
+          var create = document.getElementById('create'),
+          st03body = document.getElementById('bodyrpt3');          
+
+
+          ////////////////////////////////////////
+          /////StationFour
+          ///Title
+          var create = document.getElementById('create'),
+          chasisone = document.getElementById('lock4');
+
+          var create = document.getElementById('create'),
+          strut11 = document.getElementById('txtStrut11');
+
+          var create = document.getElementById('create'),
+          axle11 = document.getElementById('txtAxle11');
+
+          var create = document.getElementById('create'),
+          muffler11 = document.getElementById('txtMuffler11');
+
+          var create = document.getElementById('create'),
+          fender11 = document.getElementById('txtFender11');
+
+          //////StationFour NG Report 
+          var create = document.getElementById('create'),
+          ngchasisone = document.getElementById('ng4');
+
+           //////StationFour Time Report 
+          var create = document.getElementById('create'),
+          timechasisone = document.getElementById('timeChasisOne');
+
+          //////StationFour Time Report 
+          var create = document.getElementById('create'),
+          timechasisonedelay = document.getElementById('timeChasisOneDelay');
+
+          
+          
+          //////Report on claim
+          var create = document.getElementById('create'),
+          confirm = document.getElementById('txtDamages');
+
+          var create = document.getElementById('create'),
+          please1 = document.getElementById('txtYes1');
+          
+          var create = document.getElementById('create'),
+          please2 = document.getElementById('txtNo1');
+
+          var create = document.getElementById('create'),
+          charged = document.getElementById('txtCharged');
+
+          var create = document.getElementById('create'),
+          charged1 = document.getElementById('txtYes11');
+
+          var create = document.getElementById('create'),
+          charged2 = document.getElementById('txtNo11');
+
+          var create = document.getElementById('create'),
+          freecharge = document.getElementById('txtFree');
+
+          var create = document.getElementById('create'),
+          freecharge1 = document.getElementById('txtYes22');
+
+          var create = document.getElementById('create'),
+          freecharge2 = document.getElementById('txtNo22');
+
+          var create = document.getElementById('create'),
+          shortreport = document.getElementById('txtClaim');          
+
+          var create = document.getElementById('create'),
+          position1 = document.getElementById('positionOne');
+
+          var create = document.getElementById('create'),
+          position2 = document.getElementById('positionTwo');
+
+          create.addEventListener('click', function () {
+          var link = document.getElementById('downloadlink');
+          
+          link.href = makeTextFile(" \r\n " + "BATCH: " + batch.value + " \r\n " +  "MODEL: " + model.value 
+          + " \r\n " + "VIN NUMBER: " + vin.value + " \r\n " + "ENGINE NUMBER: " + engine.value + " \r\n " + "COLOR: " + color.value + " \r\n " + "KEYCODE: " + keycode.value
+          + " \r\n " + "TRANSMISSION TYPE: " + transmission.value + " \r\n " + "PRODUCTION DATE: " + productdate.value 
+          + " \r\n " + " \r\n " + "Station01---------------------" + trimone.value 
+          + " \r\n " + "Match VIN and Engine number: " + strut1.value
+          + " \r\n " + "Engine mounting bracket assembly: " + axle1.value
+          + " \r\n " + "Gear box (Transmission) mounting: " + muffler1.value
+          + " \r\n " + "Propeller shaft mounting (Transmission)" + fender1.value
+          + " \r\n " + "Propeller shaft stud nut: " + bumper1.value
+          + " \r\n " + "Propeller shaft mounting (Transfer case): " + speed1.value
+          + " \r\n " + "Leaf spring frt bolt (rear axle mtg): " + lrstrut1.value
+          + " \r\n " + "Leaf spring RR nut (rear axle mtg): " + hock1.value
+          + " \r\n " + "Leaf spring brkt to the axle: " + power1.value
+          + " \r\n " + "Shock absorber RR LH & RH: " + mrear1.value
+          + " \r\n " + "Power steering hose connection bolt: " + piex1.value
+          + " \r\n " + "Rear bumper mtng bolt: " + ewa1.value
+          + " \r\n " + "Exhaust pipe: " + bov1.value
+          + " \r\n " + "Check the 2 fuel hose lock on the fuel Tank: " + yawu1.value
+          + " \r\n " + " \r\n " + "Station01 - TV" + tvtrimone.value
+          + " \r\n " + "Match VIN and Engine number: " + strut2.value
+          + " \r\n " + "Engine mounting bracket assembly: " + axle2.value
+          + " \r\n " + "Gear box (Transmission) mounting: " + muffler2.value
+          + " \r\n " + "Propeller shaft mounting (Transmission)" + fender2.value
+          + " \r\n " + "Propeller shaft stud nut: " + bumper2.value
+          + " \r\n " + "Propeller shaft mounting (Transfer case): " + speed2.value
+          + " \r\n " + "Leaf spring frt bolt (rear axle mtg): " + lrstrut2.value
+          + " \r\n " + "Leaf spring RR nut (rear axle mtg): " + hock2.value
+          + " \r\n " + "Leaf spring brkt to the axle: " + power2.value
+          + " \r\n " + "Shock absorber RR LH & RH: " + mrear2.value
+          + " \r\n " + "Power steering hose connection bolt: " + piex2.value
+          + " \r\n " + "Rear bumper mtng bolt: " + ewa2.value
+          + " \r\n " + "Exhaust pipe: " + bov2.value
+          + " \r\n " + "Check the 2 fuel hose lock on the fuel Tank: " + yawu2.value
+          + " \r\n " + " \r\n " + "Station01 NG REPORT: " + ngtrimone.value
+          + " \r\n " + " \r\n " + "Station01 TIME REPORT: " + timetrimone.value
+          + " \r\n " + " \r\n " + "Station01 TIME DELAY REPORT: " + timetrimonedelay.value
+          + " \r\n " + " \r\n " + "Station01  BODY REPORT: " + st01body.value
+          + " \r\n " + " \r\n " + "Station02---------------------" + trimtwo.value
+          + " \r\n " + "Cargo box (load box) A,B,C,D,E,FE,F MTG: " + screw1.value
+          + " \r\n " + " \r\n " + "Station02 - TV" + tvtrimtwo.value
+          + " \r\n " + "Cargo box (load box) A,B,C,D,E,FE,F MTG: " + screw2.value
+          + " \r\n " + " \r\n " + "Station02 NG REPORT: " + ngtrimtwo.value
+          + " \r\n " + " \r\n " + "Station02 TIME REPORT: " + timetrimtwo.value
+          + " \r\n " + " \r\n " + "Station02 TIME DELAY REPORT: " + timetrimtwodelay.value
+          + " \r\n " + " \r\n " + "Station02  BODY REPORT: " + st02body.value
+          + " \r\n " + " \r\n " + "Station03---------------------" + trimthree.value
+          + " \r\n " + "Engine Rear Bracket Installation: " + bracket1.value
+          + " \r\n " + "R FrT Constant Velocity (Drive Shaft): " + drive1.value
+          + " \r\n " + "(3)-Way catalytic Converter Asembly (V-shaped Clamp): " + clamp1.value
+          + " \r\n " + "L Frt Brk hose Assembly To L Frt Brake Assembly: " + hose1.value
+          + " \r\n " + "R Frt Brk hose Assembly To R Frt Brake Assembly: " + hosebrk1.value
+          + " \r\n " + "MAP/IAT Sensor Installation: " + sensor1.value
+          + " \r\n " + " \r\n " + "Station03 - TV" + tvtrimthree.value
+          + " \r\n " + "Engine Rear Bracket Installation: " + bracket2.value
+          + " \r\n " + "R FrT Constant Velocity (Drive Shaft): " + drive2.value
+          + " \r\n " + "(3)-Way catalytic Converter Asembly (V-shaped Clamp): " + clamp2.value
+          + " \r\n " + "L Frt Brk hose Assembly To L Frt Brake Assembly: " + hose2.value
+          + " \r\n " + "R Frt Brk hose Assembly To R Frt Brake Assembly: " + hosebrk2.value
+          + " \r\n " + "MAP/IAT Sensor Installation: " + sensor2.value
+          + " \r\n " + " \r\n " + "Station03 NG REPORT: " + ngtrimthree.value
+          + " \r\n " + " \r\n " + "Station03 TIME REPORT: " + timetrimthree.value
+          + " \r\n " + " \r\n " + "Station03 TIME DELAY REPORT: " + timetrimthreedelay.value
+          + " \r\n " + " \r\n " + "Station03  BODY REPORT: " + st03body.value
+          + " \r\n " + " \r\n " + "Station04---------------------" + chasisone.value
+          + " \r\n " + "ATF: " + strut11.value
+          + " \r\n " + "BRAKE FLUID: " + axle11.value
+          + " \r\n " + "A/C GAS: " + muffler11.value
+          + " \r\n " + "WIPER:" + fender11.value
+          + " \r\n " + " \r\n " + "Station04 NG REPORT: " + ngchasisone.value
+          + " \r\n " + " \r\n " + "Station04 TIME REPORT: " + timechasisone.value
+          + " \r\n " + " \r\n " + "Station04 TIME DELAY REPORT: " + timechasisonedelay.value                    
+          + " \r\n " + " \r\n " + "Please confirm if there were damages on this batch:" + confirm.value
+          + " \r\n " + " \r\n " + ":" + please1.value
+          + " \r\n " + " \r\n " + ":" + please2.value
+          + " \r\n " + " \r\n " + "Charged:" + charged.value
+          + " \r\n " + " \r\n " + ":" + charged1.value
+          + " \r\n " + " \r\n " + ":" + charged2.value
+          + " \r\n " + " \r\n " + "Free of charge:" + freecharge.value
+          + " \r\n " + " \r\n " + ":" + freecharge1.value
+          + " \r\n " + " \r\n " + ":" + freecharge2.value
+          + " \r\n " + " \r\n " + "Short Report on Claim:" + shortreport.value
+          + " \r\n " + " \r\n " + "Authorized by production:" + position1.value
+          + " \r\n " + " \r\n " + "Authorized by quality control:" + position2.value);
+          link.style.display = 'block';
+          }, false);
+          })();
+          }
+    
+    
+
+</script>
+    </body>
+</html>       

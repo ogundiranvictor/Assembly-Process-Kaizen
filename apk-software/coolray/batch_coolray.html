@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>APK</title>
+<link rel="stylesheet" href="../css/main.css"/>
+<link rel="shortcut icon" href="../icons/mikano_logo.png">
+</head>
+
+<style>
+    /*@media queries for the page */
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) and (max-width: 599px) {
+          
+     }
+       
+       /* Small devices (portrait tablets and large phones, 600px and up) */
+       @media only screen and (min-width: 600px) and (max-width: 699px) {
+       
+     }
+     
+     
+     /* Medium devices (landscape tablets, 700px and up) */
+     @media only screen and (min-width: 700px) and (max-width: 899px) {
+        
+       } 
+    
+         /* Large devices (laptops/desktops, 900px and up) */
+      @media only screen and (min-width: 900px) and (max-width: 1199px) {
+      
+      } 
+       
+       /* Extra large devices (large laptops and desktops, 1200px and up) */
+       @media only screen and (min-width: 1200px) { 
+      /* this code is used to work on the welcomepage body; importantly background propertise */
+    
+    
+        .body6{
+                background-image: url(welcomepage.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                padding: 0px;
+                background-color: #E6E6FA;
+            }
+
+            
+
+
+            
+    
+        .welcomepagelogostockin{
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+    /*clear float */
+    .clear{
+        clear:both;
+    }
+
+ 
+    .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        font-size: 14px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+        margin-top: 20px;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content a:hover {background-color: #f1f1f1}
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+      .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+      }
+      
+      .dropdown_list{
+        font-size: 16px;
+        font-weight: bold;
+      }
+      
+      .container{
+        margin-left: 200px;
+      }
+
+    
+    .hidden{
+        display : none;
+        
+        }
+        
+        .aside{
+            margin-left: 100px;
+            margin-top: 50px;
+        }
+
+        
+        .button2:hover {
+          background-color: #4CAF50;
+          color: white;
+        }
+      
+
+.button2{
+  font-weight:bold;
+  margin-left: 20px;
+}
+
+    
+    a:link {
+        color: black;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      
+      a:visited {
+        color: black;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      
+      a:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      
+      a:active {
+        color: rgb(117, 117, 115);
+        background-color: transparent;
+        text-decoration: none;
+      }
+    }
+      </style>
+
+    
+    
+    
+    
+    
+    <!--the expansionform.html is used as a landing page when the user click no the form-->
+    <body class="body6"> 
+    
+                <header><div class="welcomepagelogostockin">
+                            <img src="../images/welcomepage_logo.png"  alt="advic"style="  max-width: 100%; height: auto;"/>
+                        </div>
+                </header>
+    <div class="clear"></div>
+<main class="container">
+    <div class="dropdown"> 
+        <button class="dropbtn">V</button>
+        
+           <div class="dropdown-content">
+            <a href="">Operation02</a>
+        <a href="">Operation03</a>
+        <a href="">Operation04</a>
+        <a href="">Operation05</a>
+        <a href="">Operation06</a>
+        <a href="">Operation07</a>
+        <a href="">Operation08</a>
+        <a href="">Operation09</a>
+        <a href="">Operation10</a>
+        <button class="button2">Submit_Total</button>
+          </div>
+         </div><button class="dropdown_list"><a href="batch01_coolray.html">Batch01</a></button>
+
+<div class="dropdown"> 
+    <button class="dropbtn">V</button>
+    
+       <div class="dropdown-content">
+        <a href="">Operation02</a>
+        <a href="">Operation03</a>
+        <a href="">Operation04</a>
+        <a href="">Operation05</a>
+        <a href="">Operation06</a>
+        <a href="">Operation07</a>
+        <a href="">Operation08</a>
+        <a href="">Operation09</a>
+        <a href="">Operation10</a>
+
+      </div>
+     </div><button class="dropdown_list" id="button" onclick="batch02()"> Batch02</button>
+
+
+     
+<div class="dropdown"> 
+    <button class="dropbtn">V</button>
+    
+       <div class="dropdown-content">
+        <a href="">Operation02</a>
+        <a href="">Operation03</a>
+        <a href="">Operation04</a>
+        <a href="">Operation05</a>
+        <a href="">Operation06</a>
+        <a href="">Operation07</a>
+        <a href="">Operation08</a>
+        <a href="">Operation09</a>
+        <a href="">Operation10</a>
+      </div>
+     </div><button class="dropdown_list" id="button" onclick="batch03()"> Batch03</button>
+
+
+
+     
+<div class="dropdown"> 
+    <button class="dropbtn">V</button>
+    
+       <div class="dropdown-content">
+        <a href="">Operation02</a>
+        <a href="">Operation03</a>
+        <a href="">Operation04</a>
+        <a href="">Operation05</a>
+        <a href="">Operation06</a>
+        <a href="">Operation07</a>
+        <a href="">Operation08</a>
+        <a href="">Operation09</a>
+        <a href="">Operation10</a>
+      </div>
+     </div><button class="dropdown_list" id="button" onclick="batch04()"> Batch04</button>
+
+
+
+     
+<div class="dropdown"> 
+    <button class="dropbtn">V</button>
+    
+       <div class="dropdown-content">
+        <a href="">Operation02</a>
+        <a href="">Operation03</a>
+        <a href="">Operation04</a>
+        <a href="">Operation05</a>
+        <a href="">Operation06</a>
+        <a href="">Operation07</a>
+        <a href="">Operation08</a>
+        <a href="">Operation09</a>
+        <a href="">Operation10</a>
+      </div>
+     </div><button class="dropdown_list" id="button" onclick="batch05()"> Batch05</button>
+
+
+     
+<div class="dropdown"> 
+    <button class="dropbtn">V</button>
+    
+       <div class="dropdown-content">
+        <a href="">Operation02</a>
+        <a href="">Operation03</a>
+        <a href="">Operation04</a>
+        <a href="">Operation05</a>
+        <a href="">Operation06</a>
+        <a href="">Operation07</a>
+        <a href="">Operation08</a>
+        <a href="">Operation09</a>
+        <a href="">Operation10</a>
+      </div>
+     </div><button class="dropdown_list" id="button" onclick="batch06()"> Batch06</button>
+
+     
+<div class="dropdown"> 
+    <button class="dropbtn">V</button>
+    
+       <div class="dropdown-content">
+        <a href="">Operation02</a>
+        <a href="">Operation03</a>
+        <a href="">Operation04</a>
+        <a href="">Operation05</a>
+        <a href="">Operation06</a>
+        <a href="">Operation07</a>
+        <a href="">Operation08</a>
+        <a href="">Operation09</a>
+        <a href="">Operation10</a>
+      </div>
+     </div><button class="dropdown_list" id="button" onclick="batch07()"> Batch07</button>
+
+     
+<div class="dropdown"> 
+    <button class="dropbtn">V</button>
+    
+       <div class="dropdown-content">
+        <a href="">Operation02</a>
+        <a href="">Operation03</a>
+        <a href="">Operation04</a>
+        <a href="">Operation05</a>
+        <a href="">Operation06</a>
+        <a href="">Operation07</a>
+        <a href="">Operation08</a>
+        <a href="">Operation09</a>
+        <a href="">Operation10</a>
+      </div>
+     </div><button class="dropdown_list" id="button" onclick="batch08()"> Batch08</button>
+
+     
+<div class="dropdown"> 
+    <button class="dropbtn">V</button>
+    
+       <div class="dropdown-content">
+        <a href="">Operation02</a>
+        <a href="">Operation03</a>
+        <a href="">Operation04</a>
+        <a href="">Operation05</a>
+        <a href="">Operation06</a>
+        <a href="">Operation07</a>
+        <a href="">Operation08</a>
+        <a href="">Operation09</a>
+        <a href="">Operation10</a>
+      </div>
+     </div><button class="dropdown_list" id="button" onclick="batch09()"> Batch09</button>
+
+     
+<div class="dropdown"> 
+    <button class="dropbtn">V</button>
+    
+       <div class="dropdown-content">
+        <a href="">Operation02</a>
+        <a href="">Operation03</a>
+        <a href="">Operation04</a>
+        <a href="">Operation05</a>
+        <a href="">Operation06</a>
+        <a href="">Operation07</a>
+        <a href="">Operation08</a>
+        <a href="">Operation09</a>
+        <a href="">Operation10</a>
+      </div>
+     </div><button class="dropdown_list" id="button" onclick="batch10()"> Batch10</button><br>
+
+     
+<div class="dropdown"> 
+    <button class="dropbtn">V</button>
+    
+       <div class="dropdown-content">
+        <a href="">Operation02</a>
+        <a href="">Operation03</a>
+        <a href="">Operation04</a>
+        <a href="">Operation05</a>
+        <a href="">Operation06</a>
+        <a href="">Operation07</a>
+        <a href="">Operation08</a>
+        <a href="">Operation09</a>
+        <a href="">Operation10</a>
+
+      </div>
+     </div><button class="dropdown_list" id="button" onclick="batch11()"> Batch11</button>
+
+     
+<div class="dropdown"> 
+    <button class="dropbtn">V</button>
+    
+       <div class="dropdown-content">
+        <a href="">Operation02</a>
+        <a href="">Operation03</a>
+        <a href="">Operation04</a>
+        <a href="">Operation05</a>
+        <a href="">Operation06</a>
+        <a href="">Operation07</a>
+        <a href="">Operation08</a>
+        <a href="">Operation09</a>
+        <a href="">Operation10</a>
+      </div>
+     </div><button class="dropdown_list" id="button" onclick="batch12()"> Batch12</button>
+
+     
+<div class="dropdown"> 
+    <button class="dropbtn">V</button>
+    
+       <div class="dropdown-content">
+        <a href="">Operation02</a>
+        <a href="">Operation03</a>
+        <a href="">Operation04</a>
+        <a href="">Operation05</a>
+        <a href="">Operation06</a>
+        <a href="">Operation07</a>
+        <a href="">Operation08</a>
+        <a href="">Operation09</a>
+        <a href="">Operation10</a>
+      </div>
+     </div><button class="dropdown_list" id="button" onclick="batch13()"> Batch13</button>
+
+     
+<div class="dropdown"> 
+    <button class="dropbtn">V</button>
+    
+       <div class="dropdown-content">
+        <a href="">Operation02</a>
+        <a href="">Operation03</a>
+        <a href="">Operation04</a>
+        <a href="">Operation05</a>
+        <a href="">Operation06</a>
+        <a href="">Operation07</a>
+        <a href="">Operation08</a>
+        <a href="">Operation09</a>
+        <a href="">Operation10</a>
+      </div>
+     </div><button class="dropdown_list" id="button" onclick="batch14()"> Batch14</button>
+
+     
+<div class="dropdown"> 
+    <button class="dropbtn">V</button>
+    
+       <div class="dropdown-content">
+        <a href="">Operation02</a>
+        <a href="">Operation03</a>
+        <a href="">Operation04</a>
+        <a href="">Operation05</a>
+        <a href="">Operation06</a>
+        <a href="">Operation07</a>
+        <a href="">Operation08</a>
+        <a href="">Operation09</a>
+        <a href="">Operation10</a>
+      </div>
+     </div><button class="dropdown_list" id="button" onclick="batch15()"> Batch15</button>
+
+     
+<div class="dropdown"> 
+    <button class="dropbtn">V</button>
+    
+       <div class="dropdown-content">
+        <a href="">Operation02</a>
+        <a href="">Operation03</a>
+        <a href="">Operation04</a>
+        <a href="">Operation05</a>
+        <a href="">Operation06</a>
+        <a href="">Operation07</a>
+        <a href="">Operation08</a>
+        <a href="">Operation09</a>
+        <a href="">Operation10</a>
+      </div>
+     </div><button class="dropdown_list" id="button" onclick="batch16()"> Batch16</button>
+
+     
+<div class="dropdown"> 
+    <button class="dropbtn">V</button>
+    
+       <div class="dropdown-content">
+        <a href="">Operation02</a>
+        <a href="">Operation03</a>
+        <a href="">Operation04</a>
+        <a href="">Operation05</a>
+        <a href="">Operation06</a>
+        <a href="">Operation07</a>
+        <a href="">Operation08</a>
+        <a href="">Operation09</a>
+        <a href="">Operation10</a>
+      </div>
+     </div><button class="dropdown_list" id="button" onclick="batch17()"> Batch17</button>
+
+     
+<div class="dropdown"> 
+    <button class="dropbtn">V</button>
+    
+       <div class="dropdown-content">
+        <a href="">Operation02</a>
+        <a href="">Operation03</a>
+        <a href="">Operation04</a>
+        <a href="">Operation05</a>
+        <a href="">Operation06</a>
+        <a href="">Operation07</a>
+        <a href="">Operation08</a>
+        <a href="">Operation09</a>
+        <a href="">Operation10</a>
+      </div>
+     </div><button class="dropdown_list" id="button" onclick="batch18()"> Batch18</button>
+
+     
+<div class="dropdown"> 
+    <button class="dropbtn">V</button>
+    
+       <div class="dropdown-content">
+        <a href="">Operation02</a>
+        <a href="">Operation03</a>
+        <a href="">Operation04</a>
+        <a href="">Operation05</a>
+        <a href="">Operation06</a>
+        <a href="">Operation07</a>
+        <a href="">Operation08</a>
+        <a href="">Operation09</a>
+        <a href="">Operation10</a>
+      </div>
+     </div><button class="dropdown_list" id="button" onclick="batch19()"> Batch19</button>
+
+
+     
+<div class="dropdown"> 
+    <button class="dropbtn">V</button>
+    
+       <div class="dropdown-content">
+        <a href="">Operation02</a>
+        <a href="">Operation03</a>
+        <a href="">Operation04</a>
+        <a href="">Operation05</a>
+        <a href="">Operation06</a>
+        <a href="">Operation07</a>
+        <a href="">Operation08</a>
+        <a href="">Operation09</a>
+        <a href="">Operation10</a>
+      </div>
+     </div><button class="dropdown_list" id="button" onclick="batch20()"> Batch20</button>
+
+
+</main>
+
+<section>
+    
+
+    
+</section>
+
+    
+    <div class="clear"></div>
+   
+        
+    
+    <div class="clear"></div>
+        <footer>  
+             <hr>
+    <div class="copyright">
+       <small>copyright&copy;2023Mikano</small> 
+    </div>
+    
+    </footer>
+<script>
+   
+</script>
+    </body>
+</html>       
